@@ -244,6 +244,7 @@
         $(this).addClass('selected');
         $('.autorize-tab.opened').removeClass('opened')
         $('#' + $(this).data('tab')).addClass('opened');
+        adaptSideBarHeight();
     })
     /*adding triagle-icon for menu's item if are subMenu*/
 

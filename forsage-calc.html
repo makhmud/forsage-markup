@@ -175,45 +175,45 @@
                     <div class="col col1">
                         <div class="form-item required">
                             <label for="">Объем двигателя</label>
-                            <input type="text"/>
+                            <input type="text" class="engine_v" id="emadr"/>
                         </div>
                         <div class="form-item radio-group">
                             <div class="label">Растамаживаю авто как</div>
                             <div class="radios">
-                                <div class="radio-item"><input id="as-1" name="as" type="radio"/><label for="as-1">Физлицо</label></div>
-                                <div class="radio-item"><input id="as-2" name="as" type="radio"/><label for="as-2">Юрлицо</label></div>
+                                <div class="radio-item"><input id="as-1" name="lico" value="1" type="radio"/><label for="as-1">Физлицо</label></div>
+                                <div class="radio-item"><input id="as-2" name="lico" value="2" type="radio" /><label for="as-2">Юрлицо</label></div>
                             </div>
                         </div>
                         <div class="form-item radio-group">
                             <div class="label">Тип двигателя</div>
                             <div class="radios">
-                                <div class="radio-item"><input id="type-1" name="type" type="radio"/><label for="type-1">Бензиновый</label></div>
-                                <div class="radio-item"><input id="type-2" name="type" type="radio"/><label for="type-2">Дизельный</label></div>
+                                <div class="radio-item"><input id="type-1" name="dvig" value="1" type="radio"/><label for="type-1">Бензиновый</label></div>
+                                <div class="radio-item"><input id="type-2" name="dvig" value="2" type="radio"/><label for="type-2">Дизельный</label></div>
                             </div>
                         </div>
                     </div>
                     <div class="col col2">
                         <div class="form-item required">
-                            <label for="">Объем двигателя</label>
-                            <input type="text"/>
+                            <label for="">Стоимость авто</label>
+                            <input type="text" class="cost"/>
                         </div>
                         <div class="form-item radio-group">
                             <div class="label">Возраст авто</div>
                             <div class="radios">
-                                <div class="radio-item"><input id="age-1" name="age" type="radio"/><label for="age-1">Менее 3-х лет</label></div>
-                                <div class="radio-item"><input id="age-2" name="age" type="radio"/><label for="age-2">От 3-х до 5-ти лет</label></div>
-                                <div class="radio-item"><input id="age-3" name="age" type="radio"/><label for="age-3">Более 5-ти лет</label></div>
+                                <div class="radio-item"><input id="age-1" name="age" value="1" type="radio"/><label for="age-1">Менее 3-х лет</label></div>
+                                <div class="radio-item"><input id="age-2" name="age" value="2" type="radio"/><label for="age-2">От 3-х до 5-ти лет</label></div>
+                                <div class="radio-item"><input id="age-3" name="age" value="3" type="radio"/><label for="age-3">Более 5-ти лет</label></div>
                             </div>
                         </div>
                     </div>
                     <div class="form-item submit">
-                        <input type="submit" value="Рассчитать" class="bt-show-red callback">
+                        <input type="submit" value="Рассчитать" class="bt-show-red zbutton" name="result_tam">
                         <div class="result">
                             <div class="result-set">
-                                <span class="label">Растаможка составит</span> <span class="value-1">7666  €</span> или <span class="value-1">$10273</span>
+                                <div class="result-e"></div>
                             </div>
                             <div class="course">
-                                По курсу <span class="value">1.340</span> НБ РБ на 12.08.14 г.
+                                <div class="result-kurs"></div>
                             </div>
 
                         </div>
@@ -1518,13 +1518,10 @@
     <script type="text/javascript" src="js/jquery-ui.min.js"></script>
     <script type="text/javascript" src="js/jquery.jcarousel.min.js"></script>
     <script type="text/javascript" src="js/jcarousel.responsive.js"></script>
-    <script type="text/javascript" src="js/amcharts/amcharts.js"></script>
-    <script type="text/javascript" src="js/amcharts/serial.js"></script>
-    <script type="text/javascript" src="js/amcharts/pie.js"></script>
-    <script type="text/javascript" src="js/amchart-fuel.js"></script>
     <script type="text/javascript" src="js/jquery.formstyler.min.js"></script>
     <script src="js/data.js"></script>
     <script src="js/mainJq.js"></script>
+    <script src="js/tam_calc.js"></script>
     <script src="js/jquery.ui-slider.js"></script>
     <script src="js/jquery.main.js"></script>
 </body>

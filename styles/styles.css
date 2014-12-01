@@ -4688,6 +4688,20 @@ form.standart .form-item.captcha input{
 .autorize-tabs #signup .col{
     margin-bottom: 20px;
 }
+
+.tam-tables .autorize-tabs{
+    height: auto;
+}
+.tam-tables .autorize-tabs .autorize-tab{
+    visibility: hidden;
+    position: relative;
+    height: 0;
+}
+.tam-tables .autorize-tabs .autorize-tab.opened{
+    visibility: visible;
+    height: auto;
+}
+
 .thanks-add .thanks-text{
     background-color: #f2f2f2;
     padding: 120px 0;
@@ -5078,9 +5092,6 @@ form#calc-big .col2 .label{
 }
 .tam-tables table.standart tr > *{
     vertical-align: top;
-}
-.tam-tables .autorize-tabs{
-    height: 1000px;
 }
 #tam-table-2 tr>th:nth-child(1),#tam-table-2 tr>th:nth-child(2){
     width: 23%;
