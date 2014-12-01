@@ -1,0 +1,2126 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Forsage - Автомобильный портал</title>
+    <link rel="stylesheet" type="text/css" href="styles/jquery-ui.css">
+
+    <link rel="stylesheet" type="text/css" href="js/jquery.formstyler.css">
+    <link rel="stylesheet" type="text/css" href="styles/styles.css">
+    <link rel="stylesheet" type="text/css" href="styles/jcarousel.responsive.css">
+	<link rel="stylesheet" href="fonts/font-awesome/css/font-awesome.min.css">
+    <link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+	<link rel="shortcut icon" href="images/favicon.ico">
+	<!--[if lt IE 9]>
+	<script src="js/html5shiv.min.js"></script>
+	<![endif]-->
+</head>
+<body>
+<!-- <body class="page-add"> -->
+    <header>
+        <div class="header clearfix">
+            <div class="main-logo">
+                <a href="#">
+                    <img src="images/header/main-logo.png" alt="FORSAGE.by - автомобильный портал">
+                </a>
+                <span>FORSAGE.by, автомобильный портал</span>
+            </div><!--end MAIN LOGO-->
+
+            <div class="wrap-registration display">
+                <span class="link-entry">
+                    <a href="#" id="popup-autoreg">Войдите</a>
+                </span>
+
+                <span>или</span>
+
+                <span class="link-registration">
+                    <a href="#" id="popup-registration">зарегистрируйтесь</a>
+                </span>
+            </div>
+
+            <div class="wrap-profile">
+                <img src="images/header/profile_img.jpg" alt="">
+
+                <a class="profile-name" href="#">Mister X</a>
+
+                <table class="profile-sections">
+                    <tr>
+                        <td>
+                            <a href="#">Мой профиль</a>
+                        </td>
+                        <td>
+                            <a href="#">Мои сервисы</a>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <a href="#">Мои объявления</a>
+                        </td>
+                        <td>
+                            <a href="#">Баланс (10250 руб.)</a>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+            <span class="add-ads">Подать объявление</span>
+			
+
+        </div><!--end HEADER-->
+
+        <nav id="nav-wrap" class="bg-nav">
+            <ul id="nav" class="nav">
+                <li>
+                    <a href="#">Продажа авто</a>
+                </li>
+
+                <li>
+                    <a href="#">Автосервисы</a>
+                    <ul class="sub-menu">
+                        <li>
+                            <a href="#">СТО</a>
+                        </li>
+
+                        <li>
+                            <a href="#">Шиномонтаж</a>
+                        </li>
+
+                        <li>
+                            <a href="#">Автостоянки</a>
+                        </li>
+
+                        <li>
+                            <a href="#">Автомойки</a>
+                        </li>
+
+                        <li>
+                            <a href="#">АЗС</a>
+                        </li>
+                        
+                        <li>
+                            <a href="#">Автопрокат</a>
+                        </li>
+                        
+                        <li>
+                            <a href="#">Автодилеры</a>
+                        </li>
+                        
+                        <li>
+                            <a href="#">Автохаусы</a>
+                        </li>
+                        
+                        <li>
+                            <a href="#">Автошколы</a>
+                        </li>
+                        
+                        <li>
+                            <a href="#">Грузоперевозки</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="#">ПДД</a>
+                </li>
+
+                <li>
+                    <a href="#">Новости</a>
+                    <ul class="sub-menu">
+                       <li>
+                            <a href="#">ДТП</a>
+                        </li>
+                        <li>
+                            <a href="#">В Беларуси</a>
+                        </li>
+                        <li>
+                            <a href="#">В мире</a>
+                        </li>
+                        <li>
+                            <a href="#">Автоспорт</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="#">Ещё</a>
+                    <ul class="sub-menu">
+                        <li>
+                            <a href="#">Калькулятор растаможки</a>
+                        </li>
+                        <li>
+                            <a href="#">График цен на топливо</a>
+                        </li>
+                        <li>
+                            <a href="#">График цен на авто</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="wrap-sub-nav">
+            <div class="sub-nav">
+                <a href="#">Главная</a>
+                <a href="#">Hyundai</a>
+                <a href="#">Santa Fe</a>
+                <span>г.Минск, 2006 год за $19000</span>
+            </div>
+        </div>
+    </header>
+
+    <div class="wrapper clearfix add-page">
+        <div class="add-step-1" data-step="1">
+            <div class="sub-header clearfix">
+                <div class="sub-header-l">
+                    <h1>Подать объявление</h1>
+                </div>
+                <div class="sub-header-r">
+                    <span class="step-num">Шаг 1 из 3</span>
+                </div>
+            </div>
+            <div class="col-group">
+            <div class="content w710">
+				<div class="section params">
+					<h2>Указать параметры автомобиля</h2>
+                    <form id="info" class="standart " action="/">
+                        <div class="col col1">
+                            <div class="form-item">
+                                <label for="#">Марка</label>
+                                <select class="custom-input custom-select-height custom-select_js" name="" id="">
+                                    <option value="" disabled selected>выбрать</option>
+                                    <option value="0">Барановичи</option>
+                                    <option value="0">Барановичи</option>
+                                    <option value="0">Барановичи</option>
+                                    <option value="0">Барановичи</option>
+                                </select>
+
+                                <div class="tip">
+                                    ?
+                                    <div class="text">Укажите цвет своего автомобиля
+                                        в соответствии с паспортом
+                                        транспортного средства</div>
+                                </div>
+                            </div>
+                            <div class="form-item">
+                                <label for="#">Модель</label>
+                                <select class="custom-input custom-select-height custom-select_js" name="" id="">
+                                    <option value="" disabled selected>выбрать</option>
+                                    <option value="0">Барановичи</option>
+                                    <option value="0">Барановичи</option>
+                                    <option value="0">Барановичи</option>
+                                    <option value="0">Барановичи</option>
+                                </select>
+
+                                <div class="tip">
+                                    ?
+                                    <div class="text">Укажите цвет своего автомобиля
+                                        в соответствии с паспортом
+                                        транспортного средства</div>
+                                </div>
+                            </div>
+                            <div class="form-item">
+                                <label for="#">Год выпуска</label>
+                                <select class="custom-input custom-select-height custom-select_js" name="" id="">
+                                    <option value="" disabled selected>выбрать</option>
+                                    <option value="0">Барановичи</option>
+                                    <option value="0">Барановичи</option>
+                                    <option value="0">Барановичи</option>
+                                    <option value="0">Барановичи</option>
+                                </select>
+
+                                <div class="tip">
+                                    ?
+                                    <div class="text">Укажите цвет своего автомобиля
+                                        в соответствии с паспортом
+                                        транспортного средства</div>
+                                </div>
+                            </div>
+                            <div class="form-item">
+                                <label for="#">Цвет </label>
+                                <select class="custom-input custom-select-height custom-select_js" name="" id="">
+                                    <option value="" disabled selected>выбрать</option>
+                                    <option value="0">Барановичи</option>
+                                    <option value="0">Барановичи</option>
+                                    <option value="0">Барановичи</option>
+                                    <option value="0">Барановичи</option>
+                                </select>
+
+                                <div class="tip">
+                                    ?
+                                    <div class="text">Укажите цвет своего автомобиля
+                                        в соответствии с паспортом
+                                        транспортного средства</div>
+                                </div>
+                            </div>
+                            <div class="form-item">
+                                <label for="#">Количество дверей</label>
+                                <select class="custom-input custom-select-height custom-select_js" name="" id="">
+                                    <option value="" disabled selected>выбрать</option>
+                                    <option value="0">Барановичи</option>
+                                    <option value="0">Барановичи</option>
+                                    <option value="0">Барановичи</option>
+                                    <option value="0">Барановичи</option>
+                                </select>
+
+                                <div class="tip">
+                                    ?
+                                    <div class="text">Укажите цвет своего автомобиля
+                                        в соответствии с паспортом
+                                        транспортного средства</div>
+                                </div>
+                            </div>
+                            <div class="form-item">
+                                <label for="#">Тип кузова</label>
+                                <select class="custom-input custom-select-height custom-select_js" name="" id="">
+                                    <option value="" disabled selected>выбрать</option>
+
+                                    <option value="0">Барановичи</option>
+                                    <option value="0">Барановичи</option>
+                                    <option value="0">Барановичи</option>
+                                    <option value="0">Барановичи</option>
+                                </select>
+
+                                <div class="tip">
+                                    ?
+                                    <div class="text">Укажите цвет своего автомобиля
+                                        в соответствии с паспортом
+                                        транспортного средства</div>
+                                </div>
+                            </div>
+                            <div class="form-item">
+                                <label for="#">Привод</label>
+                                <select class="custom-input custom-select-height custom-select_js" name="" id="">
+                                    <option value="" disabled selected>выбрать</option>
+                                    <option value="0">Барановичи</option>
+                                    <option value="0">Барановичи</option>
+                                    <option value="0">Барановичи</option>
+                                    <option value="0">Барановичи</option>
+                                </select>
+
+                                <div class="tip">
+                                    ?
+                                    <div class="text">Укажите цвет своего автомобиля
+                                        в соответствии с паспортом
+                                        транспортного средства</div>
+                                </div>
+                            </div><div class="form-item">
+                            <label for="#">Коробка передач</label>
+                            <select class="custom-input custom-select-height custom-select_js" name="" id="">
+                                <option value="" disabled selected>выбрать</option>
+                                <option value="0">Барановичи</option>
+                                <option value="0">Барановичи</option>
+                                <option value="0">Барановичи</option>
+                                <option value="0">Барановичи</option>
+                            </select>
+
+                            <div class="tip">
+                                ?
+                                <div class="text">Укажите цвет своего автомобиля
+                                    в соответствии с паспортом
+                                    транспортного средства</div>
+                            </div>
+                        </div>
+
+
+                        </div>
+                        <div class="col col2">
+                            <div class="form-item">
+                                <label for="">Комплектация</label>
+                                <input type="text"/>
+                                <div class="tip">
+                                    ?
+                                    <div class="text">Укажите цвет своего автомобиля
+                                        в соответствии с паспортом
+                                        транспортного средства</div>
+                                </div>
+                            </div>
+                            <div class="form-item">
+                                <label for="#">Тип двигателя</label>
+                                <select class="custom-input custom-select-height custom-select_js" name="" id="">
+                                    <option value="" disabled selected>выбрать</option>
+                                    <option value="0">Барановичи</option>
+                                    <option value="0">Барановичи</option>
+                                    <option value="0">Барановичи</option>
+                                    <option value="0">Барановичи</option>
+                                </select>
+
+                                <div class="tip">
+                                    ?
+                                    <div class="text">Укажите цвет своего автомобиля
+                                        в соответствии с паспортом
+                                        транспортного средства</div>
+                                </div>
+                            </div>
+                            <div class="form-item required">
+                                <label for="">Объем двигателя</label>
+                                <input type="text"/>
+                                <div class="tip">
+                                    ?
+                                    <div class="text">Укажите цвет своего автомобиля
+                                        в соответствии с паспортом
+                                        транспортного средства</div>
+                                </div>
+                            </div>
+                            <div class="form-item">
+                                <label for="#">Состояние</label>
+                                <select class="custom-input custom-select-height custom-select_js" name="" id="">
+                                    <option value="" disabled selected>выбрать</option>
+                                    <option value="0">Барановичи</option>
+                                    <option value="0">Барановичи</option>
+                                    <option value="0">Барановичи</option>
+                                    <option value="0">Барановичи</option>
+                                </select>
+
+                                <div class="tip">
+                                    ?
+                                    <div class="text">Укажите цвет своего автомобиля
+                                        в соответствии с паспортом
+                                        транспортного средства</div>
+                                </div>
+                            </div>
+
+                            <div class="form-item with-currency required">
+                                <label for="">Пробег</label>
+                                <input type="text"/>
+                                <label class="custom-select-bg width100 little-select-2 custom-select-mini-bg">
+                                <select class="custom-input  custom-select-height custom-select_js" name="" id="">
+                                    <option value="0">км</option>
+                                    <option value="0">мл</option>
+                                </select>
+                                    </label>
+                                <div class="tip">
+                                    ?
+                                    <div class="text">Укажите цвет своего автомобиля
+                                        в соответствии с паспортом
+                                        транспортного средства</div>
+                                </div>
+                            </div>
+
+                            <div class="form-item">
+                                <label for="#">Таможня</label>
+                                <select class="custom-input custom-select-height custom-select_js" name="" id="">
+                                    <option value="" disabled selected>выбрать</option>
+                                    <option value="0">Барановичи</option>
+                                    <option value="0">Барановичи</option>
+                                    <option value="0">Барановичи</option>
+                                    <option value="0">Барановичи</option>
+                                </select>
+
+                                <div class="tip">
+                                    ?
+                                    <div class="text">Укажите цвет своего автомобиля
+                                        в соответствии с паспортом
+                                        транспортного средства</div>
+                                </div>
+                            </div>
+
+                            <div class="form-item with-currency required">
+                                <label for="">Цена</label>
+                                <input type="text"/>
+                                <label class="custom-select-bg width100 little-select-2 custom-select-mini-bg">
+                                <select class="custom-input custom-select-height custom-select_js" name="" id="">
+                                    <option value="0">$</option>
+                                    <option value="0">руб.</option>
+                                </select>
+                                    </label>
+                                <div class="tip">
+                                    ?
+                                    <div class="text">Укажите цвет своего автомобиля
+                                        в соответствии с паспортом
+                                        транспортного средства</div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+
+				</div>
+				<div class="section add-photo-section">
+					<h2>Добавить фотографии</h2>
+                    <div class="inner">
+                        <ul class="add-photo-list clearfix">
+                            <li class="li-photo-format">Фотмат JPG</li>
+                            <li class="li-photo-limit">Не более 3mb</li>
+                            <li class="li-photo-max">Максимум 10 фото</li>
+                            <li class="li-photo-no-copy">Без логотипов других сайтов</li>
+                        </ul>
+                        <div class="upload-area">
+                            <div class="panel">
+                                <span class="cloud"></span>
+                            <span class="text">Фотографии СТО
+(переместите сюда файлы
+для загрузки)</span>
+                            </div>
+                        </div>
+                    </div>
+
+				</div>
+				<div class="section complect-section">
+					<h2>Указать комплектацию</h2>
+
+                    <div class="inner">
+                        <div class="col col1">
+                            <ul class="complect-list">
+                                <li><a class="tred ul-dashed selected" data-tab="1" href="#">Безопасность</a></li>
+                                <li><a class="tred ul-dashed" href="#" data-tab="3">Дополнительное оборудование</a></li>
+                                <li><a class="tred ul-dashed" href="#" data-tab="2">Защита от угона</a></li>
+                                <li><a class="tred ul-dashed" href="#" data-tab="1">Звук</a></li>
+                                <li><a class="tred ul-dashed" href="#" data-tab="2">Комфорт</a></li>
+                                <li><a class="tred ul-dashed" href="#" data-tab="3">Мультимедиа</a></li>
+                                <li><a class="tred ul-dashed" href="#" data-tab="2">Обзор</a></li>
+                                <li><a class="tred ul-dashed" href="#" data-tab="3">Опции</a></li>
+                                <li><a class="tred ul-dashed" href="#" data-tab="1">Салон</a></li>
+                                <li><a class="tred ul-dashed" href="#" data-tab="2">Связь</a></li>
+                                <li><a class="tred ul-dashed" href="#" data-tab="3">Экология</a></li>
+                            </ul>
+                        </div>
+                        <div class="col col2">
+                            <div class="tab tab-1 opened">
+                                <div class="form-item">
+                                    <input type="checkbox" id="ch1"/><label for="">ABS - антиблокировочная система</label>
+                                </div>
+                                <div class="form-item">
+                                    <input type="checkbox"  id="ch2"/><label for="">Airbag для водителя</label>
+                                </div>
+                                <div class="form-item">
+                                    <input type="checkbox" id="ch4"/><label for="">Airbag для пассажира</label>
+                                </div>
+                                <div class="form-item">
+                                    <select class="custom-input custom-select-height custom-select_js" name=""  id="ch3">
+                                        <option value="" disabled selected>выбрать</option>
+                                        <option value="0">Airbag боковые</option>
+                                        <option value="0">Airbag боковые</option>
+                                        <option value="0">Airbag боковые</option>
+                                        <option value="0">Airbag боковые</option>
+                                    </select>
+                                </div>
+                                <div class="form-item">
+                                    <input type="checkbox"  id="ch5"/><label for="">Airbag оконные</label>
+                                </div>
+                                <div class="form-item">
+                                    <input type="checkbox"  id="ch6"/><label for="">ESP - система стабилизации</label>
+                                </div>
+                                <div class="form-item">
+                                    <input type="checkbox"  id="ch7"/><label for="">ASR - антипробуксовочная система</label>
+                                </div>
+                            </div>
+                            <div class="tab tab-2">
+                                <div class="form-item">
+                                    <input type="checkbox"  id="ch8"/><label for="">ABS - антиблокировочная система</label>
+                                </div>
+                                <div class="form-item">
+                                    <input type="checkbox"  id="ch9"/><label for="">Airbag для водителя</label>
+                                </div>
+                                <div class="form-item">
+                                    <input type="checkbox"  id="ch10"/><label for="">Airbag для пассажира</label>
+                                </div>
+                                <div class="form-item">
+                                    <select class="custom-input custom-select-height custom-select_js" name=""  id="ch11">
+                                        <option value="" disabled selected>выбрать</option>
+                                        <option value="0">Airbag боковые</option>
+                                        <option value="0">Airbag боковые</option>
+                                        <option value="0">Airbag боковые</option>
+                                        <option value="0">Airbag боковые</option>
+                                    </select>
+                                </div>
+                                <div class="form-item">
+                                    <input type="checkbox" id="ch12"/><label for="">Airbag оконные</label>
+                                </div>
+                                <div class="form-item">
+                                    <input type="checkbox"  id="ch13"/><label for="">ESP - система стабилизации</label>
+                                </div>
+                            </div>
+                            <div class="tab tab-3">
+                                <div class="form-item">
+                                    <input type="checkbox"  id="ch15"/><label for="">ABS - антиблокировочная система</label>
+                                </div>
+                                <div class="form-item">
+                                    <input type="checkbox"  id="ch18"/><label for="">Airbag для водителя</label>
+                                </div>
+                                <div class="form-item">
+                                    <input type="checkbox"  id="ch19"/><label for="">Airbag для пассажира</label>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+				</div>
+				<div class="section">
+					<h2>Добавить дополнительные сведения</h2>
+                    <form class="standart" action="">
+                        <div class="form-descr">
+                            <div class="title">Что можно добавить</div>
+                            <ul>
+                                <li>— преимущества вашего автомобиля</li>
+                                <li>— дополнительные свойства и характеристики, известные только вам</li>
+                                <li>— форму оплаты, возможность продажи в кредит и т.д.</li>
+                                <li>— что еще вы можете передать с автомобилем (резина, запчасти,
+                                    гарантии)</li>
+                            </ul>
+                            <div class="title">Запрещается</div>
+                            <ul>
+                                <li>— размещать ссылки на какие-либо сайты</li>
+                                <li>— указывать телефоны, электронную почту</li>
+                                <li>— указывать цену</li>
+                            </ul>
+                        </div>
+                        <div class="form-item descr required">
+                            <textarea name="" id="" cols="30" rows="10"></textarea>
+                            <div class="symb-count">Осталось символов: <span class="left">1000</span> из <span class="total">1000</span> возможных</div>
+                        </div>
+                        <div class="form-item">
+                            <label for="#">Срок размещения объявления</label>
+                            <select class="custom-input custom-select-height custom-select_js" name="" id="">
+                                <option value="" disabled selected>выбрать</option>
+                                <option value="0">Барановичи</option>
+                                <option value="0">Барановичи</option>
+                                <option value="0">Барановичи</option>
+                                <option value="0">Барановичи</option>
+                            </select>
+
+                            <div class="tip">
+                                ?
+                                <div class="text">Укажите цвет своего автомобиля
+                                    в соответствии с паспортом
+                                    транспортного средства</div>
+                            </div>
+                        </div>
+                        <div class="form-item submit">
+                            <input type="submit" class="bt-show-red next" value="Далее"/>
+                        </div>
+                    </form>
+				</div>
+            </div>
+			<aside class="side-bar autoheight">
+                <div class="improve">
+                    <div class="title">
+                        <div class="fire">Прокачай</div>
+                        <div class="text">свое объявление!</div>
+                    </div>
+                    <div class="tuning">
+                        <span class="tuning-1 opened"></span>
+                        <span class="tuning-2"></span>
+                        <span class="tuning-3"></span>
+                        <span class="tuning-4"></span>
+                        <span class="tuning-5"></span>
+                    </div>
+                    <div class="adv fz22">
+                        У тебя <strong class="percent"><span class="value">0</span>%</strong> прокачки, давай еще!
+                    </div>
+                    <div class="progress">
+                        <div class="progress-start"></div>
+                        <div class="progress-content">
+                            <div class="progress-active"></div>
+                        </div>
+                        <div class="progress-end"></div>
+                    </div>
+                </div>
+			</aside><!--end SIDEBAR-->
+		</div><!-- col-group -->
+        </div>
+        <div class="add-step-2" data-step="2">
+            <div class="sub-header clearfix">
+                <div class="sub-header-l">
+                    <h1>Подать объявление</h1>
+                </div>
+                <div class="sub-header-r">
+                    <span class="step-num">Шаг 2 из 3</span>
+                </div>
+            </div>
+            <div class="col-group">
+                <div class="content w710">
+                    <div class="section contacts-section">
+                        <h2>Указать Ваши контакты</h2>
+                        <form id="info" class="standart" action="/">
+                            <div class="col col1">
+                                <div class="form-item required">
+                                    <label for="">Город <span class="required">*</span></label>
+                                    <select name="" id="">
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                    </select>
+                                    <div class="tip">
+                                        ?
+                                        <div class="text">Укажите цвет своего автомобиля
+                                            в соответствии с паспортом
+                                            транспортного средства</div>
+                                    </div>
+                                </div>
+
+                                <div class="form-item phone ">
+                                    <label for="">Телефон <span class="required">*</span></label>
+                                    <span class="phone-prefix">+375</span>
+                                    <input type="text" class="prefix"/>
+                                    <input type="text" class="number"/>
+                                    <div class="tip">
+                                        ?
+                                        <div class="text">Название СТО</div>
+                                    </div>
+                                    <a class="ul-dashed tred add" href="#">Добавить еще</a>
+                                </div>
+
+                                <div class="form-item required">
+                                    <label for="">Контактное лицо <span class="required">*</span></label>
+                                    <input type="text"/>
+                                    <div class="tip">
+                                        ?
+                                        <div class="text">Укажите цвет своего автомобиля
+                                            в соответствии с паспортом
+                                            транспортного средства</div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="col col2">
+                                <div class="form-item week">
+                                    <label for="">Время звонков</label>
+                                    <ul class="inline-list week-days">
+                                        <li><a href="#">пн</a></li>
+                                        <li><a href="#">вт</a></li>
+                                        <li><a href="#">ср</a></li>
+                                        <li><a href="#">чт</a></li>
+                                        <li><a href="#">пт</a></li>
+                                        <li><a href="#">сб</a></li>
+                                        <li><a href="#">вс</a></li>
+                                    </ul>
+                                    <div class="tip">
+                                        ?
+                                        <div class="text">Название СТО</div>
+                                    </div>
+                                    <a class="ul-dashed tred every-day" href="#">Ежедневно</a>
+                                </div>
+                                <div class="form-item hours-range">
+                                    <select name="" id="">
+                                        <option value="0">0:00</option>
+                                        <option value="1">1:00</option>
+                                        <option value="2">2:00</option>
+                                        <option value="3">3:00</option>
+                                        <option value="4">4:00</option>
+                                        <option value="5">5:00</option>
+                                        <option value="6">6:00</option>
+                                        <option value="7">7:00</option>
+                                        <option value="8">8:00</option>
+                                        <option value="9">9:00</option>
+                                        <option value="10" selected="selected">10:00</option>
+                                        <option value="11">11:00</option>
+                                        <option value="12">12:00</option>
+                                        <option value="13">13:00</option>
+                                        <option value="14">14:00</option>
+                                        <option value="15">15:00</option>
+                                        <option value="16">16:00</option>
+                                        <option value="17">17:00</option>
+                                        <option value="18">18:00</option>
+                                        <option value="19">19:00</option>
+                                        <option value="20">20:00</option>
+                                        <option value="21">21:00</option>
+                                        <option value="22">22:00</option>
+                                        <option value="23">23:00</option>
+                                        <option value="24">24:00</option>
+                                    </select>
+                                    <select name="" id="">
+
+                                        <option value="0">0:00</option>
+                                        <option value="1">1:00</option>
+                                        <option value="2">2:00</option>
+                                        <option value="3">3:00</option>
+                                        <option value="4">4:00</option>
+                                        <option value="5">5:00</option>
+                                        <option value="6">6:00</option>
+                                        <option value="7">7:00</option>
+                                        <option value="8">8:00</option>
+                                        <option value="9">9:00</option>
+                                        <option value="10">10:00</option>
+                                        <option value="11">11:00</option>
+                                        <option value="12">12:00</option>
+                                        <option value="13">13:00</option>
+                                        <option value="14">14:00</option>
+                                        <option value="15">15:00</option>
+                                        <option value="16">16:00</option>
+                                        <option value="17">17:00</option>
+                                        <option value="18" selected="selected">18:00</option>
+                                        <option value="19">19:00</option>
+                                        <option value="20">20:00</option>
+                                        <option value="21">21:00</option>
+                                        <option value="22">22:00</option>
+                                        <option value="23">23:00</option>
+                                        <option value="24">24:00</option>
+                                    </select>
+
+                                    <div class="tip">
+                                        ?
+                                        <div class="text">Укажите цвет своего автомобиля
+                                            в соответствии с паспортом
+                                            транспортного средства</div>
+                                    </div>
+                                    <a class="ul-dashed tred every-hour" href="#">Круглосуточно</a>
+                                </div>
+                            </div>
+                            <div class="form-item submit">
+                                <input type="submit" class="bt-show-red bt-back prev" value="Назад"/>
+                                <input type="submit" class="bt-show-red next" value="Далее"/>
+                            </div>
+                        </form>
+
+                    </div>
+
+                </div>
+                <aside class="side-bar autoheight">
+                    <div class="improve">
+                        <div class="title">
+                            <div class="fire">Прокачай</div>
+                            <div class="text">свое объявление!</div>
+                        </div>
+                        <div class="tuning">
+                            <span class="tuning-1 opened"></span>
+                            <span class="tuning-2"></span>
+                            <span class="tuning-3"></span>
+                            <span class="tuning-4"></span>
+                            <span class="tuning-5"></span>
+                        </div>
+                        <div class="adv fz22">
+                            У тебя <strong class="percent"><span class="value">0</span>%</strong> прокачки, давай еще!
+                        </div>
+                        <div class="progress">
+                            <div class="progress-start"></div>
+                            <div class="progress-content">
+                                <div class="progress-active"></div>
+                            </div>
+                            <div class="progress-end"></div>
+                        </div>
+                    </div>
+                </aside><!--end SIDEBAR-->
+            </div><!-- col-group -->
+        </div>
+    <div class="add-step-3"  data-step="3">
+        <div class="sub-header clearfix">
+            <div class="sub-header-l">
+                <h1>Подать объявление</h1>
+            </div>
+            <div class="sub-header-r">
+                <span class="step-num">Шаг 2 из 3</span>
+            </div>
+        </div>
+        <div class="col-group">
+            <div class="content w710">
+                <div class="section contacts-section">
+                    <h2>Авторизуйтесь</h2>
+                    <div class="autorize-tabs-links">
+                        <div>
+                            <a class="ul-dashed tred" data-tab="login" href="#">У меня ЕСТЬ здесь аккаунт</a>
+                        </div>
+                        <div>
+                            <a class="ul-dashed tred" data-tab="signup" href="#">У меня НЕТ аккаунта. Сделать за 15 секунд!</a>
+                        </div>
+                    </div>
+                    <div class="autorize-tabs">
+                        <form id="login" class="standart autorize-tab" action="/">
+                            <div class="col col1">
+                                <div class="form-item required">
+                                    <label for="">Логин <span class="required">*</span></label>
+                                    <input type="text"/>
+                                    <div class="tip">
+                                        ?
+                                        <div class="text">Укажите цвет своего автомобиля
+                                            в соответствии с паспортом
+                                            транспортного средства</div>
+                                    </div>
+                                </div>
+                                <div class="form-item required">
+                                    <label for="">Пароль <span class="required">*</span></label>
+                                    <input type="text"/>
+                                    <div class="tip">
+                                        ?
+                                        <div class="text">Укажите цвет своего автомобиля
+                                            в соответствии с паспортом
+                                            транспортного средства</div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="col col2">
+
+                            </div>
+                            <div class="form-item submit">
+                                <input type="submit" class="bt-show-red bt-back next" value="Назад"/>
+                                <input type="submit" class="bt-show-red prev" value="Завершить"/>
+                            </div>
+                        </form>
+                        <form id="signup" class="standart autorize-tab" action="/">
+                            <div class="col col1">
+                                <div class="form-item required">
+                                    <label for="">Логин <span class="required">*</span></label>
+                                    <input type="text"/>
+                                    <div class="tip">
+                                        ?
+                                        <div class="text">Укажите цвет своего автомобиля
+                                            в соответствии с паспортом
+                                            транспортного средства</div>
+                                    </div>
+                                </div>
+                                <div class="form-item required">
+                                    <label for="">Пароль <span class="required">*</span></label>
+                                    <input type="text"/>
+                                    <div class="tip">
+                                        ?
+                                        <div class="text">Укажите цвет своего автомобиля
+                                            в соответствии с паспортом
+                                            транспортного средства</div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="col col2">
+                                <div class="form-item required">
+                                    <label for="">E-mail <span class="required">*</span></label>
+                                    <input type="text"/>
+                                    <div class="tip">
+                                        ?
+                                        <div class="text">Укажите цвет своего автомобиля
+                                            в соответствии с паспортом
+                                            транспортного средства</div>
+                                    </div>
+                                </div>
+                                <div class="form-item captcha required">
+                                    <label for="">Введите код <span class="required">*</span></label>
+                                    <img src="images/content/captcha.png" alt=""/>
+                                    <input type="text"/>
+                                    <div class="tip">
+                                        ?
+                                        <div class="text">Укажите цвет своего автомобиля
+                                            в соответствии с паспортом
+                                            транспортного средства</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-item submit">
+                                <input type="submit" class="bt-show-red bt-back prev" value="Назад"/>
+                                <input type="submit" class="bt-show-red next" value="Завершить"/>
+                            </div>
+                        </form>
+                    </div>
+
+
+                </div>
+
+            </div>
+            <aside class="side-bar autoheight">
+                <div class="improve">
+                    <div class="title">
+                        <div class="fire">Прокачай</div>
+                        <div class="text">свое объявление!</div>
+                    </div>
+                    <div class="tuning">
+                        <span class="tuning-1 opened"></span>
+                        <span class="tuning-2"></span>
+                        <span class="tuning-3"></span>
+                        <span class="tuning-4"></span>
+                        <span class="tuning-5"></span>
+                    </div>
+                    <div class="adv fz22">
+                        У тебя <strong class="percent"><span class="value">0</span>%</strong> прокачки, давай еще!
+                    </div>
+                    <div class="progress">
+                        <div class="progress-start"></div>
+                        <div class="progress-content">
+                            <div class="progress-active"></div>
+                        </div>
+                        <div class="progress-end"></div>
+                    </div>
+                </div>
+            </aside><!--end SIDEBAR-->
+        </div><!-- col-group -->
+    </div>
+    <div class="add-step-4" data-step="4">
+        <div class="thanks-text">
+            <span class="icon-service-type1-1"></span>
+            <div class="text align-l">
+                <div class="title">Спасибо за добавленное объявление!</div>
+                <div class="inner">Как только оно будет одобрено модератором,
+                    вы увидите его на сайте.</div>
+            </div>
+
+        </div>
+    </div>
+    </div><!--end WRAPPER-->
+
+    <div class="wrap-footer">
+        <footer class="footer">
+            <a class="footer-logo" href="#">
+                <img src="images/footer/logo_footer.png" alt="Forsage">
+            </a>
+
+            <div class="box-right">
+                <div class="copyright-box">
+                    <span>2010-2014. Все права защищены</span>
+                    <span>Форсаж.BY. Автомобильный портал</span>
+                </div>
+
+                <div class="partners-footer">
+                    <a href="#">Пользовательское соглашение</a>
+                    <a href="#">Конфиденциальность информации</a>
+                    <a class="partners-foto" href="#">
+                        <img src="images/footer/openby.png" alt="open.by">
+                    </a>
+                </div>
+            </div>
+
+            <ul class="nav-footer">
+                <li>
+                    <a href="#">О проекте</a>
+                </li>
+
+                <li>
+                    <a href="#">Карта сайта</a>
+                </li>
+
+                <li>
+                    <a href="#">Рекламодателям</a>
+                </li>
+
+                <li>
+                    <a href="#">Контакты</a>
+                </li>
+            </ul>
+        </footer>
+    </div>
+
+    <!--POPUP WINDOWS-->
+    <div id="bg-popup">
+        <div id="wrap-popup">
+            <form id="popup-reg" action="#" method="post">
+                <span class="sell-car">Продать машину быстрее через блок спецразмещения</span>
+
+                <header>
+                    <div>Основные проблемы обычного размещения</div>
+                </header>
+                <ul class="list-advantage-placement">
+                    <li class="first-advantage-placement">
+                        <span>Ничем не отличается от остальных</span>
+                    </li>
+                    <li class="second-advantage-placement">
+                        <span>Быстро спускается вниз, т.к. появляются новые</span>
+                    </li>
+                    <li class="third-advantage-placement">
+                        <span>Рассчитывали продать быстро, а приходится ждать</span>
+                    </li>
+                </ul>
+
+                <div class="reg-block-1">
+                    <div class="black our-help-1">Мы вам поможем <span class="red">получить деньги <br>за машину быстрее</span></div>
+                    <div class="our-help-2">Разместим в самых выгодных местах сайта <br>в спецразмещении (будет первым в блоке, пока <br>не разместит кто-либо другой)</div>
+                </div>
+
+                <div class="reg-block-2">
+                    <div class="black">Размещенное в блоке объявление просматривают <span class="red">в 8-12 раз больше обычных</span></div>
+                </div>
+
+                <div id="unregistered-box">
+                    <div class="unreg-tooltip"><span>Для размещения в блоке<br/><b>авторизуйтесь</b></span></div>
+                </div><!--end UNREGISTERED-BOX-->
+
+                <div id="registered-box">
+                    <span class="reg-tooltip">Как здесь разместиться?</span>
+
+                    <ul class="list-placement">
+                        <li>
+                            <span class="name-select-placement">Выберите вариант пополнения</span>
+                            <label class="custom-select-bg">
+                                <select class="select-placement">
+                                    <option>МТС</option>
+                                    <option>BeeLine</option>
+                                </select>
+                            </label>
+                            <img src="images/popup/MTC.jpg" alt="МТС">
+                        </li>
+
+                        <li>
+                            <span class="name-select-placement">Количество автоматических поднятий</span>
+                            <label class="custom-select-bg">
+                                <select class="select-placement">
+                                    <option>50</option>
+                                    <option>100</option>
+                                    <option>200</option>
+                                </select>
+                            </label>
+                        </li>
+
+                        <li>
+                            <span class="name-select-placement">Срок поднятий</span>
+                            <label class="custom-select-bg">
+                                <select class="select-placement">
+                                    <option>1 день</option>
+                                    <option>2 дня</option>
+                                    <option>4 дня</option>
+                                    <option>7 дней</option>
+                                </select>
+                            </label>
+                        </li>
+                    </ul>
+
+                    <span class="terms-service">
+                        <input type="checkbox" class="check-terms-service">
+                        <a href="#">Условия предоставления услуг</a>
+                    </span>
+
+                    <div class="total-payment">
+                        <span>Итого к оплате: 27500 руб.</span>
+                        <input type="submit" value="Оплатить">
+                    </div>
+                </div><!--end REGISTERED-BOX-->
+            </form>
+
+            <form id="popup-up-ad" action="#" method="post">
+                <span class="sell-car">Получить деньги за машину можно быстрее, подняв объявление вверх</span>
+
+                <header>
+                    <div>Основные проблемы обычного размещения</div>
+                </header>
+                <ul class="list-advantage-placement">
+                    <li class="first-advantage-placement">
+                        <span>Ничем не отличается от остальных</span>
+                    </li>
+                    <li class="second-advantage-placement">
+                        <span>Быстро спускается вниз, т.к. появляются новые</span>
+                    </li>
+                    <li class="third-advantage-placement">
+                        <span>Рассчитывали продать быстро, а приходится ждать</span>
+                    </li>
+                </ul>
+
+                <div class="reg-block-1">
+                    <div class="black our-help-1">Мы вам поможем <span class="red">получить деньги <br>за машину быстрее</span></div>
+                    <div>
+                        <div class="our-help-2">Поднимем в самый верх списка (будет первым в списке, пока не поднимет кто-либо другой)</div>
+                        <div class="our-help-2">Сделаем красочные фото прямо в списке</div>
+                        <div class="our-help-2">Добавим больше информации</div>
+                    </div>
+                </div>
+
+                <div class="reg-block-2">
+                    <div class="black">Поднятое объявление объявление просматривают <span class="red">в 6-10 раз больше обычных</span></div>
+                </div>
+
+                <div id="unregistered-ad-box">
+                    <div class="unreg-tooltip"><span>Для размещения в блоке<br/><b>авторизуйтесь</b></span></div>
+                </div><!--end UNREGISTERED-BOX-->
+
+                <div id="registered-ad-box">
+                    <span class="reg-tooltip">Как здесь разместиться?</span>
+
+                    <ul class="list-placement">
+                        <li>
+                            <span class="name-select-placement">Выберите вариант пополнения</span>
+                            <label class="custom-select-bg">
+                                <select class="select-placement">
+                                    <option>МТС</option>
+                                    <option>BeeLine</option>
+                                </select>
+                            </label>
+                            <img src="images/popup/MTC.jpg" alt="МТС">
+                        </li>
+
+                        <li>
+                            <span class="name-select-placement">Количество автоматических поднятий</span>
+                            <label class="custom-select-bg">
+                                <select class="select-placement">
+                                    <option>50</option>
+                                    <option>100</option>
+                                    <option>200</option>
+                                </select>
+                            </label>
+                        </li>
+
+                        <li>
+                            <span class="name-select-placement">Срок поднятий</span>
+                            <label class="custom-select-bg">
+                                <select class="select-placement">
+                                    <option>1 день</option>
+                                    <option>2 дня</option>
+                                    <option>4 дня</option>
+                                    <option>7 дней</option>
+                                </select>
+                            </label>
+                        </li>
+                    </ul>
+
+                    <span class="terms-service">
+                        <input type="checkbox" class="check-terms-service">
+                        <a href="#">Условия предоставления услуг</a>
+                    </span>
+
+                    <div class="total-payment">
+                        <span>Итого к оплате: 27500 руб.</span>
+                        <input type="submit" value="Оплатить">
+                    </div>
+                </div><!--end REGISTERED-BOX-->
+            </form>
+
+            <div class="wrap-reg-autoreg-form">
+                <ul id="list-reg-link_js" class="clearfix">
+                    <li class="active-page">
+                        <a id="link-reg" class="bt-toggle bt-advanced-search bt-reg" href="#">Регистрация</a>
+                    </li>
+                    <li>
+                        <a id="link-autoreg" class="bt-toggle bt-advanced-search bt-reg" href="#">Авторизация</a>
+                    </li>
+                </ul>
+
+                <form id="reg-form" action="#" method="post">
+                    <ul class="list-reg-inputs">
+                        <li>
+                            <label>
+                                <span class="icon-star">Логин</span>
+                                <input type="text">
+                            </label>
+                            <span class="tooltip-form">?</span>
+                        </li>
+
+                        <li>
+                            <label>
+                                <span class="icon-star">Пароль</span>
+                                <input type="text">
+                            </label>
+                            <span class="tooltip-form">?</span>
+                        </li>
+
+                        <li>
+                            <label>
+                                <span class="icon-star">E-mail</span>
+                                <input type="text">
+                            </label>
+                        </li>
+
+                        <li class="reg-captcha">
+                            <label>
+                                <span class="icon-star">Введите код</span>
+                                <img src="images/popup/captcha.jpg" alt="Капча">
+                                <input type="text">
+                            </label>
+                            <span class="tooltip-form">?</span>
+                        </li>
+                    </ul>
+
+                    <input class="bt-show-red no-margin" type="submit" value="Зарегестрироваться">
+                    <a class="recover-pass" href="#">Восстановить пароль</a>
+                </form><!--end REG FORM-->
+
+                <form id="autoreg-form" action="#" method="post">
+                    <ul class="list-reg-inputs">
+                        <li>
+                            <label>
+                                <span class="icon-star">Логин</span>
+                                <input type="text">
+                            </label>
+                            <span class="tooltip-form">?</span>
+                        </li>
+
+                        <li>
+                            <label>
+                                <span class="icon-star">Пароль</span>
+                                <input type="text">
+                            </label>
+                            <span class="tooltip-form">?</span>
+                        </li>
+                    </ul><!--end AUTOREG FORM-->
+
+                    <span class="name-list-soc-link">Войти через</span>
+                    <ul class="list-soc-link">
+                        <li class="icon-tw"><a href="#">twitter</a></li>
+                        <li class="icon-fb"><a href="#">facebook</a></li>
+                        <li class="icon-google"><a href="#">google+</a></li>
+                        <li class="icon-od"><a href="#">одноклассники</a></li>
+                        <li class="icon-yandex"><a href="#">яндекс</a></li>
+                        <li class="icon-vk"><a href="#">вконтакте</a></li>
+                    </ul>
+
+                    <input class="bt-show-red no-margin" type="submit" value="Войти">
+                </form><!--end AUTOREG FORM-->
+            </div><!--end WRAP REG AUTOREG FORM-->
+
+            <form id="popup-advanced-search" action="#" method="post" class="form-search-features">
+                <header>
+                    <div>Расширенный поиск</div>
+                </header>
+
+                <ul class="select-box-search-form">
+                    <!--first column-->
+                    <li>
+                        <span class="name-input">Марка</span>
+                        <label class="custom-select-bg">
+                            <select class="custom-input custom-select-height custom-select_js">
+                                <option>Audi</option>
+                                <option>Ford</option>
+                            </select>
+                        </label>
+
+                        <span class="name-input">Модель</span>
+                        <label class="custom-select-bg">
+                            <select class="custom-input custom-select-height custom-select_js">
+                                <option>GL550</option>
+                                <option>GL550</option>
+                            </select>
+                        </label>
+
+                        <span class="name-input">Год выпуска</span>
+                        <div class="clearfix">
+                            <label class="custom-select-bg width100 little-select custom-select-mini-bg float-l">
+                                <select class="custom-input custom-select-height custom-select_js">
+                                    <option>2013</option>
+                                    <option>2014</option>
+                                </select>
+                            </label>
+
+                            <label class="custom-select-bg width100 little-select custom-select-mini-bg float-r">
+                                <select class="custom-input custom-select-height custom-select_js">
+                                    <option>2013</option>
+                                    <option>2014</option>
+                                </select>
+                            </label>
+                        </div>
+                    </li>
+
+                    <!--second column-->
+                    <li>
+                        <span class="name-input">Кузов</span>
+                        <label class="custom-select-bg">
+                            <select class="custom-input custom-select-height custom-select_js">
+                                <option>Внедородник</option>
+                                <option>Внедородник</option>
+                            </select>
+                        </label>
+
+                        <span class="name-input">Тип двигателя</span>
+                        <label class="custom-select-bg">
+                            <select class="custom-input custom-select-height custom-select_js">
+                                <option>Бензин</option>
+                                <option>Бензин</option>
+                            </select>
+                        </label>
+
+                        <span class="name-input">Объем двигателя</span>
+                        <div class="clearfix">
+                            <label class="custom-select-bg width100 little-select custom-select-mini-bg float-l">
+                                <select class="custom-input custom-select-height custom-select_js">
+                                    <option>4,5л</option>
+                                    <option>7,0л</option>
+                                </select>
+                            </label>
+
+                            <label class="custom-select-bg width100 little-select custom-select-mini-bg float-r">
+                                <select class="custom-input custom-select-height custom-select_js">
+                                    <option>7,0л</option>
+                                    <option>7,0л</option>
+                                </select>
+                            </label>
+                        </div>
+                    </li>
+
+                    <!--third column-->
+                    <li>
+                        <span class="name-input">Период</span>
+                        <label class="custom-select-bg">
+                            <select class="custom-input custom-select-height custom-select_js">
+                                <option>1 месяц</option>
+                                <option>1 месяц</option>
+                            </select>
+                        </label>
+
+                        <span class="name-input">Город</span>
+                        <label class="custom-select-bg">
+                            <select class="custom-input custom-select-height custom-select_js">
+                                <option>Минск</option>
+                                <option>Минск</option>
+                            </select>
+                        </label>
+
+                        <span class="name-input">Фото</span>
+                        <label class="custom-select-bg">
+                            <select class="custom-input custom-select-height custom-select_js">
+                                <option>Необязательно</option>
+                                <option>Необязательно</option>
+                            </select>
+                        </label>
+                    </li>
+                </ul>
+
+                <div class="box-price">
+                    <div class="wrap-scale-price">
+                        <span class="name-input">Цена</span>
+
+                        <div class="sliderCont">
+                            <div id="slider1"></div>
+                        </div>
+                    </div>
+
+                    <ul class="horizontal-list-select">
+                        <li>
+                            <span class="name-input">От</span>
+                            <input id="minCost1" type="text" class="custom-input little-input" value="100">
+                        </li>
+
+                        <li>
+                            <span class="name-input">До</span>
+                            <input id="maxCost1" value="200000" type="text" class="custom-input little-input">
+                        </li>
+
+                        <li>
+                            <span class="name-input">Валюта</span>
+                            <label class="custom-select-bg">
+                                <select class="custom-input custom-select-height little-select custom-select_js">
+                                    <option>Доллар</option>
+                                    <option>Евро</option>
+                                </select>
+                            </label>
+                        </li>
+                    </ul>
+                </div><!--end BOX PRICE-->
+
+                <ul class="select-box-search-form bottom">
+                    <!--first column-->
+                    <li>
+                        <span class="name-input">Пробег</span>
+                        <div class="clearfix">
+                            <input type="text" class="custom-input custom-select-height2 little-input float-l" placeholder="100000">
+                            <input type="text" class="custom-input custom-select-height2 little-input float-l" placeholder="700000">
+                            <label class="custom-select-bg width100 custom-select-mini-bg little-select float-l">
+                                <select class="custom-input custom-select-height custom-select_js">
+                                    <option>Любой тип</option>
+                                    <option>Любой тип</option>
+                                </select>
+                            </label>
+                        </div>
+
+                        <span class="name-input">Количество дверей</span>
+                        <label class="custom-select-bg">
+                            <select class="custom-input custom-select-height custom-select_js">
+                                <option>5</option>
+                                <option>4</option>
+                                <option>2</option>
+                            </select>
+                        </label>
+
+                        <span class="name-input">КПП</span>
+                        <label class="custom-select-bg">
+                            <select class="custom-input custom-select-height custom-select_js">
+                                <option>АКПП</option>
+                                <option>МКПП</option>
+                            </select>
+                        </label>
+                    </li>
+
+                    <!--second column-->
+                    <li>
+                        <span class="name-input">Состояние</span>
+                        <label class="custom-select-bg">
+                            <select class="custom-input custom-select-height custom-select_js">
+                                <option>Любое</option>
+                                <option>Битая</option>
+                                <option>Крашенная</option>
+                            </select>
+                        </label>
+
+                        <span class="name-input">Цвет</span>
+                        <label class="custom-select-bg">
+                            <select class="custom-input custom-select-height custom-select_js">
+                                <option>Любой</option>
+                                <option>Черный</option>
+                                <option>Белый</option>
+                            </select>
+                        </label>
+
+                        <span class="name-input">Сортировать по</span>
+                        <label class="custom-select-bg">
+                            <select class="custom-input custom-select-height custom-select_js">
+                                <option>Дате добавления</option>
+                                <option>Цене</option>
+                            </select>
+                        </label>
+                    </li>
+
+                    <!--third column-->
+                    <li>
+                        <span class="name-input">Таможня</span>
+                        <label class="custom-select-bg">
+                            <select class="custom-input custom-select-height custom-select_js">
+                                <option>Любая</option>
+                                <option>Любая</option>
+                            </select>
+                        </label>
+
+                        <span class="name-input">Привод</span>
+                        <label class="custom-select-bg">
+                            <select class="custom-input custom-select-height custom-select_js">
+                                <option>Полный</option>
+                                <option>Передний</option>
+                                <option>Задний</option>
+                            </select>
+                        </label>
+                    </li>
+                </ul>
+
+                <div class="other-search-parameters">
+                    <ul class="list-other-parameters">
+                        <li class="security active">
+                            <a href="#">Безопасность</a>
+
+                            <ul class="list-values">
+                                <li>
+                                    <label>
+                                        <input type="checkbox" class="check-other-parameters">
+                                        ABS - антиблокировочная система
+                                    </label>
+                                </li>
+
+                                <li>
+                                    <label>
+                                        <input type="checkbox" class="check-other-parameters">
+                                        Airbag для водителя
+                                    </label>
+                                </li>
+
+                                <li>
+                                    <label>
+                                        <input type="checkbox" class="check-other-parameters">
+                                        Airbag для пассажира
+                                    </label>
+                                </li>
+
+                                <li>
+                                    <label class="custom-select-bg custom-select-mini-bg custom-select-mini-bg2">
+                                        <select class="select-other-parameters custom-select_js">
+                                            <option>Airbag боковые</option>
+                                            <option>Airbag боковые</option>
+                                            <option>Airbag боковые</option>
+                                        </select>
+                                    </label>
+                                </li>
+
+                                <li>
+                                    <label>
+                                        <input type="checkbox" class="check-other-parameters">
+                                        Airbag оконные
+                                    </label>
+                                </li>
+
+                                <li>
+                                    <label>
+                                        <input type="checkbox" class="check-other-parameters">
+                                        ESP - система стабилизации
+                                    </label>
+                                </li>
+
+                                <li>
+                                    <label>
+                                        <input type="checkbox" class="check-other-parameters">
+                                        ASR - антипробуксовочная система
+                                    </label>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="additional-equipment">
+                            <a href="#">Дополнительное оборудование</a>
+
+                            <ul class="list-values">
+                                <li>
+                                    <label>
+                                        <input type="checkbox" class="check-other-parameters">
+                                        222222
+                                    </label>
+                                </li>
+
+                                <li>
+                                    <label>
+                                        <input type="checkbox" class="check-other-parameters">
+                                        Airbag для водителя
+                                    </label>
+                                </li>
+
+                                <li>
+                                    <label>
+                                        <input type="checkbox" class="check-other-parameters">
+                                        Airbag для пассажира
+                                    </label>
+                                </li>
+
+                                <li>
+                                    <label class="custom-select-bg custom-select-mini-bg custom-select-mini-bg2">
+                                        <select class="select-other-parameters custom-select_js">
+                                            <option>Airbag боковые</option>
+                                            <option>Airbag боковые</option>
+                                            <option>Airbag боковые</option>
+                                        </select>
+                                    </label>
+                                </li>
+
+                                <li>
+                                    <label>
+                                        <input type="checkbox" class="check-other-parameters">
+                                        Airbag оконные
+                                    </label>
+                                </li>
+
+                                <li>
+                                    <label>
+                                        <input type="checkbox" class="check-other-parameters">
+                                        ESP - система стабилизации
+                                    </label>
+                                </li>
+
+                                <li>
+                                    <label>
+                                        <input type="checkbox" class="check-other-parameters">
+                                        ASR - антипробуксовочная система
+                                    </label>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="hijack-protection">
+                            <a href="#">Защита от угона</a>
+
+                            <ul class="list-values">
+                                <li>
+                                    <label>
+                                        <input type="checkbox" class="check-other-parameters">
+                                        333333
+                                    </label>
+                                </li>
+
+                                <li>
+                                    <label>
+                                        <input type="checkbox" class="check-other-parameters">
+                                        Airbag для водителя
+                                    </label>
+                                </li>
+
+                                <li>
+                                    <label>
+                                        <input type="checkbox" class="check-other-parameters">
+                                        Airbag для пассажира
+                                    </label>
+                                </li>
+
+                                <li>
+                                    <label class="custom-select-bg custom-select-mini-bg custom-select-mini-bg2">
+                                        <select class="select-other-parameters custom-select_js">
+                                            <option>Airbag боковые</option>
+                                            <option>Airbag боковые</option>
+                                            <option>Airbag боковые</option>
+                                        </select>
+                                    </label>
+                                </li>
+
+                                <li>
+                                    <label>
+                                        <input type="checkbox" class="check-other-parameters">
+                                        Airbag оконные
+                                    </label>
+                                </li>
+
+                                <li>
+                                    <label>
+                                        <input type="checkbox" class="check-other-parameters">
+                                        ESP - система стабилизации
+                                    </label>
+                                </li>
+
+                                <li>
+                                    <label>
+                                        <input type="checkbox" class="check-other-parameters">
+                                        ASR - антипробуксовочная система
+                                    </label>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="sound">
+                            <a href="#">Звук</a>
+
+                            <ul class="list-values">
+                                <li>
+                                    <label>
+                                        <input type="checkbox" class="check-other-parameters">
+                                        444444
+                                    </label>
+                                </li>
+
+                                <li>
+                                    <label>
+                                        <input type="checkbox" class="check-other-parameters">
+                                        Airbag для водителя
+                                    </label>
+                                </li>
+
+                                <li>
+                                    <label>
+                                        <input type="checkbox" class="check-other-parameters">
+                                        Airbag для пассажира
+                                    </label>
+                                </li>
+
+                                <li>
+                                    <label class="custom-select-bg custom-select-mini-bg custom-select-mini-bg2">
+                                        <select class="select-other-parameters custom-select_js">
+                                            <option>Airbag боковые</option>
+                                            <option>Airbag боковые</option>
+                                            <option>Airbag боковые</option>
+                                        </select>
+                                    </label>
+                                </li>
+
+                                <li>
+                                    <label>
+                                        <input type="checkbox" class="check-other-parameters">
+                                        Airbag оконные
+                                    </label>
+                                </li>
+
+                                <li>
+                                    <label>
+                                        <input type="checkbox" class="check-other-parameters">
+                                        ESP - система стабилизации
+                                    </label>
+                                </li>
+
+                                <li>
+                                    <label>
+                                        <input type="checkbox" class="check-other-parameters">
+                                        ASR - антипробуксовочная система
+                                    </label>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="comfort">
+                            <a href="#">Комфорт</a>
+
+                            <ul class="list-values">
+                                <li>
+                                    <label>
+                                        <input type="checkbox" class="check-other-parameters">
+                                        555555
+                                    </label>
+                                </li>
+
+                                <li>
+                                    <label>
+                                        <input type="checkbox" class="check-other-parameters">
+                                        Airbag для водителя
+                                    </label>
+                                </li>
+
+                                <li>
+                                    <label>
+                                        <input type="checkbox" class="check-other-parameters">
+                                        Airbag для пассажира
+                                    </label>
+                                </li>
+
+                                <li>
+                                    <label class="custom-select-bg custom-select-mini-bg custom-select-mini-bg2">
+                                        <select class="select-other-parameters custom-select_js">
+                                            <option>Airbag боковые</option>
+                                            <option>Airbag боковые</option>
+                                            <option>Airbag боковые</option>
+                                        </select>
+                                    </label>
+                                </li>
+
+                                <li>
+                                    <label>
+                                        <input type="checkbox" class="check-other-parameters">
+                                        Airbag оконные
+                                    </label>
+                                </li>
+
+                                <li>
+                                    <label>
+                                        <input type="checkbox" class="check-other-parameters">
+                                        ESP - система стабилизации
+                                    </label>
+                                </li>
+
+                                <li>
+                                    <label>
+                                        <input type="checkbox" class="check-other-parameters">
+                                        ASR - антипробуксовочная система
+                                    </label>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="multimedia">
+                            <a href="#">Мультимедиа</a>
+
+                            <ul class="list-values">
+                                <li>
+                                    <label>
+                                        <input type="checkbox" class="check-other-parameters">
+                                        666666
+                                    </label>
+                                </li>
+
+                                <li>
+                                    <label>
+                                        <input type="checkbox" class="check-other-parameters">
+                                        Airbag для водителя
+                                    </label>
+                                </li>
+
+                                <li>
+                                    <label>
+                                        <input type="checkbox" class="check-other-parameters">
+                                        Airbag для пассажира
+                                    </label>
+                                </li>
+
+                                <li>
+                                    <label class="custom-select-bg custom-select-mini-bg custom-select-mini-bg2">
+                                        <select class="select-other-parameters custom-select_js">
+                                            <option>Airbag боковые</option>
+                                            <option>Airbag боковые</option>
+                                            <option>Airbag боковые</option>
+                                        </select>
+                                    </label>
+                                </li>
+
+                                <li>
+                                    <label>
+                                        <input type="checkbox" class="check-other-parameters">
+                                        Airbag оконные
+                                    </label>
+                                </li>
+
+                                <li>
+                                    <label>
+                                        <input type="checkbox" class="check-other-parameters">
+                                        ESP - система стабилизации
+                                    </label>
+                                </li>
+
+                                <li>
+                                    <label>
+                                        <input type="checkbox" class="check-other-parameters">
+                                        ASR - антипробуксовочная система
+                                    </label>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="overview">
+                            <a href="#">Обзор</a>
+
+                            <ul class="list-values">
+                                <li>
+                                    <label>
+                                        <input type="checkbox" class="check-other-parameters">
+                                        ABS - антиблокировочная система
+                                    </label>
+                                </li>
+
+                                <li>
+                                    <label>
+                                        <input type="checkbox" class="check-other-parameters">
+                                        777777
+                                    </label>
+                                </li>
+
+                                <li>
+                                    <label>
+                                        <input type="checkbox" class="check-other-parameters">
+                                        Airbag для пассажира
+                                    </label>
+                                </li>
+
+                                <li>
+                                    <label class="custom-select-bg custom-select-mini-bg custom-select-mini-bg2">
+                                        <select class="select-other-parameters custom-select_js">
+                                            <option>Airbag боковые</option>
+                                            <option>Airbag боковые</option>
+                                            <option>Airbag боковые</option>
+                                        </select>
+                                    </label>
+                                </li>
+
+                                <li>
+                                    <label>
+                                        <input type="checkbox" class="check-other-parameters">
+                                        Airbag оконные
+                                    </label>
+                                </li>
+
+                                <li>
+                                    <label>
+                                        <input type="checkbox" class="check-other-parameters">
+                                        ESP - система стабилизации
+                                    </label>
+                                </li>
+
+                                <li>
+                                    <label>
+                                        <input type="checkbox" class="check-other-parameters">
+                                        ASR - антипробуксовочная система
+                                    </label>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="options">
+                            <a href="#">Опции</a>
+
+                            <ul class="list-values">
+                                <li>
+                                    <label>
+                                        <input type="checkbox" class="check-other-parameters">
+                                        ABS - антиблокировочная система
+                                    </label>
+                                </li>
+
+                                <li>
+                                    <label>
+                                        <input type="checkbox" class="check-other-parameters">
+                                        888888
+                                    </label>
+                                </li>
+
+                                <li>
+                                    <label>
+                                        <input type="checkbox" class="check-other-parameters">
+                                        Airbag для пассажира
+                                    </label>
+                                </li>
+
+                                <li>
+                                    <label class="custom-select-bg custom-select-mini-bg custom-select-mini-bg2">
+                                        <select class="select-other-parameters custom-select_js">
+                                            <option>Airbag боковые</option>
+                                            <option>Airbag боковые</option>
+                                            <option>Airbag боковые</option>
+                                        </select>
+                                    </label>
+                                </li>
+
+                                <li>
+                                    <label>
+                                        <input type="checkbox" class="check-other-parameters">
+                                        Airbag оконные
+                                    </label>
+                                </li>
+
+                                <li>
+                                    <label>
+                                        <input type="checkbox" class="check-other-parameters">
+                                        ESP - система стабилизации
+                                    </label>
+                                </li>
+
+                                <li>
+                                    <label>
+                                        <input type="checkbox" class="check-other-parameters">
+                                        ASR - антипробуксовочная система
+                                    </label>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="interior">
+                            <a href="#">Салон</a>
+
+                            <ul class="list-values">
+                                <li>
+                                    <label>
+                                        <input type="checkbox" class="check-other-parameters">
+                                        ABS - антиблокировочная система
+                                    </label>
+                                </li>
+
+                                <li>
+                                    <label>
+                                        <input type="checkbox" class="check-other-parameters">
+                                        999999
+                                    </label>
+                                </li>
+
+                                <li>
+                                    <label>
+                                        <input type="checkbox" class="check-other-parameters">
+                                        Airbag для пассажира
+                                    </label>
+                                </li>
+
+                                <li>
+                                    <label class="custom-select-bg custom-select-mini-bg custom-select-mini-bg2">
+                                        <select class="select-other-parameters custom-select_js">
+                                            <option>Airbag боковые</option>
+                                            <option>Airbag боковые</option>
+                                            <option>Airbag боковые</option>
+                                        </select>
+                                    </label>
+                                </li>
+
+                                <li>
+                                    <label>
+                                        <input type="checkbox" class="check-other-parameters">
+                                        Airbag оконные
+                                    </label>
+                                </li>
+
+                                <li>
+                                    <label>
+                                        <input type="checkbox" class="check-other-parameters">
+                                        ESP - система стабилизации
+                                    </label>
+                                </li>
+
+                                <li>
+                                    <label>
+                                        <input type="checkbox" class="check-other-parameters">
+                                        ASR - антипробуксовочная система
+                                    </label>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="communication">
+                            <a href="#">Связь</a>
+
+                            <ul class="list-values">
+                                <li>
+                                    <label>
+                                        <input type="checkbox" class="check-other-parameters">
+                                        ABS - антиблокировочная система
+                                    </label>
+                                </li>
+
+                                <li>
+                                    <label>
+                                        <input type="checkbox" class="check-other-parameters">
+                                        Airbag для водителя
+                                    </label>
+                                </li>
+
+                                <li>
+                                    <label>
+                                        <input type="checkbox" class="check-other-parameters">
+                                        Airbag для пассажира
+                                    </label>
+                                </li>
+
+                                <li>
+                                    <label class="custom-select-bg custom-select-mini-bg custom-select-mini-bg2">
+                                        <select class="select-other-parameters custom-select_js">
+                                            <option>Airbag боковые</option>
+                                            <option>Airbag боковые</option>
+                                            <option>Airbag боковые</option>
+                                        </select>
+                                    </label>
+                                </li>
+
+                                <li>
+                                    <label>
+                                        <input type="checkbox" class="check-other-parameters">
+                                        Airbag оконные
+                                    </label>
+                                </li>
+
+                                <li>
+                                    <label>
+                                        <input type="checkbox" class="check-other-parameters">
+                                        ESP - система стабилизации
+                                    </label>
+                                </li>
+
+                                <li>
+                                    <label>
+                                        <input type="checkbox" class="check-other-parameters">
+                                        10 10 10 10 10
+                                    </label>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="ecology">
+                            <a href="#">Экология</a>
+
+                            <ul class="list-values">
+                                <li>
+                                    <label>
+                                        <input type="checkbox" class="check-other-parameters">
+                                        ABS - антиблокировочная система
+                                    </label>
+                                </li>
+
+                                <li>
+                                    <label>
+                                        <input type="checkbox" class="check-other-parameters">
+                                        Airbag для водителя
+                                    </label>
+                                </li>
+
+                                <li>
+                                    <label class="check-other-parameters">
+                                        <input type="checkbox" class="check-other-parameters">
+                                        Airbag для пассажира
+                                    </label>
+                                </li>
+
+                                <li>
+                                    <label class="custom-select-bg custom-select-mini-bg2 custom-select-mini-bg">
+                                        <select class="select-other-parameters custom-select_js">
+                                            <option>Airbag боковые</option>
+                                            <option>Airbag боковые</option>
+                                            <option>Airbag боковые</option>
+                                        </select>
+                                    </label>
+                                </li>
+
+                                <li>
+                                    <label class="bg-label_js">
+                                        <input type="checkbox" class="check-other-parameters">
+                                        Airbag оконные
+                                    </label>
+                                </li>
+
+                                <li>
+                                    <label>
+                                        <input type="checkbox" class="check-other-parameters">
+                                        11 11 11 11 11
+                                    </label>
+                                </li>
+
+                                <li>
+                                    <label>
+                                        <input type="checkbox" class="check-other-parameters">
+                                        ASR - антипробуксовочная система
+                                    </label>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+
+                <footer class="footer-section">
+                    <span class="result-search">Найдено: <span class="number-ad">80</span> объявлений</span>
+                    <input type="button" class="bt-show-red" value="Показать">
+                    <input type="reset" class="bt-reset" value="Очистить">
+                </footer>
+            </form><!--end POPUP ADVANCED SEARCH-->
+        </div><!--end WRAP POPUP-->
+    </div><!--end BG POPUP-->
+
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="js/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="js/jquery.jcarousel.min.js"></script>
+    <script type="text/javascript" src="js/jcarousel.responsive.js"></script>
+
+<script type="text/javascript" src="js/jquery.formstyler.min.js"></script>
+    <script src="js/mainJq.js"></script>
+    <script src="js/jquery.ui-slider.js"></script>
+    <script src="js/jquery.main.js"></script>
+</body>
+</html>

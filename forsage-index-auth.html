@@ -1,0 +1,2386 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Forsage - Автомобильный портал</title>
+    <link rel="stylesheet" type="text/css" href="styles/jquery-ui.css">
+    <link rel="stylesheet" type="text/css" href="styles/styles.css">
+    <link rel="stylesheet" type="text/css" href="styles/jcarousel.responsive.css">
+	<link rel="stylesheet" href="fonts/font-awesome/css/font-awesome.min.css">
+    <link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+	<link rel="shortcut icon" href="images/favicon.ico">
+	<!--[if lt IE 9]>
+	<script src="js/html5shiv.min.js"></script>
+	<![endif]-->
+</head>
+<body>
+    <header>
+        <div class="header clearfix">
+            <div class="main-logo">
+                <a href="#">
+                    <img src="images/header/main-logo.png" alt="FORSAGE.by - автомобильный портал">
+                </a>
+                <span>FORSAGE.by, автомобильный портал</span>
+            </div><!--end MAIN LOGO-->
+
+            <div class="wrap-registration">
+                <span class="link-entry">
+                    <a href="#" id="popup-autoreg">Войдите</a>
+                </span>
+
+                <span>или</span>
+
+                <span class="link-registration">
+                    <a href="#" id="popup-registration">зарегистрируйтесь</a>
+                </span>
+            </div>
+
+            <div class="wrap-profile display">
+                <img src="images/header/profile_img.jpg" alt="">
+
+                <a class="profile-name" href="#">Mister X</a>
+
+                <table class="profile-sections">
+                    <tr>
+                        <td>
+                            <a href="#">Мой профиль</a>
+                        </td>
+                        <td>
+                            <a href="#">Мои сервисы</a>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <a href="#">Мои объявления</a>
+                        </td>
+                        <td>
+                            <a href="#">Баланс (10250 руб.)</a>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+            <span class="add-ads">Подать объявление</span>
+        </div><!--end HEADER-->
+
+        <nav id="nav-wrap" class="bg-nav">
+            <ul id="nav" class="nav">
+                <li>
+                    <a href="#">Продажа авто</a>
+                </li>
+
+                <li>
+                    <a href="#">Автосервисы</a>
+                    <ul class="sub-menu">
+                        <li>
+                            <a href="#">СТО</a>
+                        </li>
+
+                        <li>
+                            <a href="#">Шиномонтаж</a>
+                        </li>
+
+                        <li>
+                            <a href="#">Автостоянки</a>
+                        </li>
+
+                        <li>
+                            <a href="#">Автомойки</a>
+                        </li>
+
+                        <li>
+                            <a href="#">АЗС</a>
+                        </li>
+                        
+                        <li>
+                            <a href="#">Автопрокат</a>
+                        </li>
+                        
+                        <li>
+                            <a href="#">Автодилеры</a>
+                        </li>
+                        
+                        <li>
+                            <a href="#">Автохаусы</a>
+                        </li>
+                        
+                        <li>
+                            <a href="#">Автошколы</a>
+                        </li>
+                        
+                        <li>
+                            <a href="#">Грузоперевозки</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="#">ПДД</a>
+                </li>
+
+                <li>
+                    <a href="#">Новости</a>
+                    <ul class="sub-menu">
+                       <li>
+                            <a href="#">ДТП</a>
+                        </li>
+                        <li>
+                            <a href="#">В Беларуси</a>
+                        </li>
+                        <li>
+                            <a href="#">В мире</a>
+                        </li>
+                        <li>
+                            <a href="#">Автоспорт</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="#">Ещё</a>
+                    <ul class="sub-menu">
+                        <li>
+                            <a href="#">Калькулятор растаможки</a>
+                        </li>
+                        <li>
+                            <a href="#">График цен на топливо</a>
+                        </li>
+                        <li>
+                            <a href="#">График цен на авто</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="wrapper clearfix">
+        <div class="content">
+            <div class="section wrap-form-search-features">
+                <h2>Поиск по параметрам</h2>
+                <span class="toggle-search-form">
+                    <a href="#" id="bt-toggle" class="bt-toggle">Свернуть поиск</a>
+                </span>
+
+                <form action="#" method="post" class="form-search-features">
+                    <ul class="select-box-search-form main-select-box-search-form">
+                        <!--first column-->
+                        <li>
+                            <span class="name-input">Марка</span>
+                            <label class="custom-select-bg">
+                                <select class="custom-input custom-select-height custom-select_js">
+                                    <option>Audi</option>
+                                    <option>Ford</option>
+                                </select>
+                            </label>
+
+                            <span class="name-input">Модель</span>
+                            <label class="custom-select-bg">
+                                <select class="custom-input custom-select-height custom-select_js">
+                                    <option>GL550</option>
+                                    <option>GL550</option>
+                                </select>
+                            </label>
+
+                            <span class="name-input">Год выпуска</span>
+                            <div class="clearfix p-right">
+                                <label class="custom-select-bg width100 little-select custom-select-mini-bg float-l">
+                                    <select class="custom-input custom-select-height custom-select_js">
+                                        <option>2013</option>
+                                        <option>2014</option>
+                                    </select>
+                                </label>
+
+                                <label class="custom-select-bg width100 little-select custom-select-mini-bg float-r">
+                                    <select class="custom-input custom-select-height custom-select_js custom-select_js">
+                                        <option>2013</option>
+                                        <option>2014</option>
+                                    </select>
+                                </label>
+                            </div>
+                        </li>
+
+                        <!--second column-->
+                        <li>
+                            <span class="name-input">Кузов</span>
+                            <label class="custom-select-bg">
+                                <select class="custom-input custom-select-height custom-select_js custom-select_js">
+                                    <option>Внедородник</option>
+                                    <option>Внедородник</option>
+                                </select>
+                            </label>
+
+                            <span class="name-input">Тип двигателя</span>
+                            <label class="custom-select-bg">
+                                <select class="custom-input custom-select-height custom-select_js custom-select_js">
+                                    <option>Бензин</option>
+                                    <option>Бензин</option>
+                                </select>
+                            </label>
+
+                            <span class="name-input">Объем двигателя</span>
+                            <div class="clearfix p-right">
+                                <label class="custom-select-bg width100 little-select custom-select-mini-bg float-l">
+                                    <select class="custom-input custom-select-height custom-select_js">
+                                        <option>4,5л</option>
+                                        <option>7,0л</option>
+                                    </select>
+                                </label>
+
+                                <label class="custom-select-bg width100 little-select custom-select-mini-bg float-r">
+                                    <select class="custom-input custom-select-height custom-select_js">
+                                        <option>7,0л</option>
+                                        <option>7,0л</option>
+                                    </select>
+                                </label>
+                            </div>
+                        </li>
+
+                        <!--third column-->
+                        <li>
+                            <span class="name-input">Период</span>
+                            <label class="custom-select-bg">
+                                <select class="custom-input custom-select-height custom-select_js">
+                                    <option>1 месяц</option>
+                                    <option>1 месяц</option>
+                                </select>
+                            </label>
+
+                            <span class="name-input">Город</span>
+                            <label class="custom-select-bg">
+                                <select class="custom-input custom-select-height custom-select_js">
+                                    <option>Минск</option>
+                                    <option>Минск</option>
+                                </select>
+                            </label>
+
+                            <span class="name-input">Фото</span>
+                            <label class="custom-select-bg">
+                                <select class="custom-input custom-select-height custom-select_js">
+                                    <option>Необязательно</option>
+                                    <option>Необязательно</option>
+                                </select>
+                            </label>
+                        </li>
+                    </ul>
+
+                    <div class="box-price">
+                        <div class="wrap-scale-price">
+                            <span class="name-input">Цена</span>
+
+                            <div class="sliderCont">
+                                <div id="slider"></div>
+                            </div>
+                        </div>
+
+                        <ul class="horizontal-list-select">
+                            <li>
+                                <span class="name-input">От</span>
+                                <input id="minCost" type="text" class="custom-input little-input" value="100">
+                            </li>
+
+                            <li>
+                                <span class="name-input">До</span>
+                                <input id="maxCost" value="200000" type="text" class="custom-input little-input">
+                            </li>
+
+                            <li>
+                                <span class="name-input">Валюта</span>
+                                <label class="custom-select-bg">
+                                    <select class="custom-input custom-select-height little-select custom-select_js">
+                                        <option>Доллар</option>
+                                        <option>Евро</option>
+                                    </select>
+                                </label>
+                            </li>
+                        </ul>
+                    </div><!--end BOX PRICE-->
+
+                    <footer class="footer-section">
+                        <span class="result-search">Найдено: <span class="number-ad">80</span> объявлений</span>
+                        <input type="button" class="bt-show-red" value="Показать">
+                        <input type="reset" class="bt-reset" value="Очистить">
+
+                        <a href="#" id="link-advanced-search" class="bt-toggle bt-advanced-search float-r">Расширенный поиск</a>
+                    </footer>
+                </form>
+            </div><!--end WRAP FORM SEARCH FEATURES-->
+
+            <div class="section wrap-list-cars">
+                <h2>Быстрый переход</h2>
+
+                <ul id="list-filter-auto_js" class="list-filter-auto">
+                    <li class="active-category-auto">
+                        <a href="#">По марке</a>
+                    </li>
+
+                    <li>
+                        <a href="#">По кузову</a>
+                    </li>
+
+                    <li>
+                        <a href="#">По городу</a>
+                    </li>
+                </ul><!--end LIST FILTER AUTO-->
+
+                <ul class="wrap-all-category-auto indent-b-20">
+                    <li class="show_js">
+                        <ul class="list-auto-brand">
+                            <li class="box-category-auto">
+                                <span class="wrap-foto-auto">
+                                    <img src="images/content/auto_icon/Audi.png" alt="Audi">
+                                    <img src="images/content/auto_icon/Audi_hover.png" alt="Audi">
+                                </span>
+
+                                <span class="wrap-link-auto">
+                                    <a href="#" class="link-category-auto">Audi</a>
+                                </span>
+                            </li>
+
+                            <li class="box-category-auto">
+                                <span class="wrap-foto-auto">
+                                    <img src="images/content/auto_icon/bmw.png" alt="BMW">
+                                    <img src="images/content/auto_icon/bmw_hover.png" alt="BMW">
+                                </span>
+
+                                <span class="wrap-link-auto">
+                                    <a href="#" class="link-category-auto">BMW</a>
+                                </span>
+                            </li>
+
+                            <li class="box-category-auto">
+                                <span class="wrap-foto-auto">
+                                    <img src="images/content/auto_icon/chevrolet.png" alt="Chevrolet">
+                                    <img src="images/content/auto_icon/chevrolet_hover.png" alt="Chevrolet">
+                                </span>
+
+                                <span class="wrap-link-auto">
+                                    <a href="#" class="link-category-auto">Chevrolet</a>
+                                </span>
+                            </li>
+
+                            <li class="box-category-auto">
+                                <span class="wrap-foto-auto">
+                                    <img src="images/content/auto_icon/Chryslera.png" alt="Chryslera">
+                                    <img src="images/content/auto_icon/Chryslera_hover.png" alt="Chryslera">
+                                </span>
+
+                                <span class="wrap-link-auto">
+                                    <a href="#" class="link-category-auto">Chrysler</a>
+                                </span>
+                            </li>
+
+                            <li class="box-category-auto">
+                                <span class="wrap-foto-auto">
+                                    <img src="images/content/auto_icon/Citroen.png" alt="Citroen">
+                                    <img src="images/content/auto_icon/Citroen_hover.png" alt="Citroen">
+                                </span>
+
+                                <span class="wrap-link-auto">
+                                    <a href="#" class="link-category-auto">Citroen</a>
+                                </span>
+                            </li>
+
+                            <li class="box-category-auto">
+                                <span class="wrap-foto-auto">
+                                    <img src="images/content/auto_icon/Dodge.png" alt="Dodge">
+                                    <img src="images/content/auto_icon/Dodge_hover.png" alt="Dodge">
+                                </span>
+
+                                <span class="wrap-link-auto">
+                                    <a href="#" class="link-category-auto">Dodge</a>
+                                </span>
+                            </li>
+
+                            <li class="box-category-auto">
+                                <span class="wrap-foto-auto">
+                                    <img src="images/content/auto_icon/fiat.png" alt="Fiat">
+                                    <img src="images/content/auto_icon/fiat_hover.png" alt="Fiat">
+                                </span>
+
+                                <span class="wrap-link-auto">
+                                    <a href="#" class="link-category-auto">FIAT</a>
+                                </span>
+                            </li>
+
+                            <li class="box-category-auto">
+                                <span class="wrap-foto-auto">
+                                    <img src="images/content/auto_icon/Ford.png" alt="Ford">
+                                    <img src="images/content/auto_icon/Ford_hover.png" alt="Ford">
+                                </span>
+
+                                <span class="wrap-link-auto">
+                                    <a href="#" class="link-category-auto">Ford</a>
+                                </span>
+                            </li>
+
+                            <li class="box-category-auto">
+                                <span class="wrap-foto-auto">
+                                    <img src="images/content/auto_icon/honda.png" alt="Honda">
+                                    <img src="images/content/auto_icon/honda_hover.png" alt="Honda">
+                                </span>
+
+                                <span class="wrap-link-auto">
+                                    <a href="#" class="link-category-auto">Honda</a>
+                                </span>
+                            </li>
+
+                            <li class="box-category-auto">
+                                <span class="wrap-foto-auto">
+                                    <img src="images/content/auto_icon/Hyundai.png" alt="Hyundai">
+                                    <img src="images/content/auto_icon/Hyundai_hover.png" alt="Hyundai">
+                                </span>
+
+                                <span class="wrap-link-auto">
+                                    <a href="#" class="link-category-auto">Hyundai</a>
+                                </span>
+                            </li>
+
+                            <li class="box-category-auto">
+                                <span class="wrap-foto-auto">
+                                    <img src="images/content/auto_icon/Infiniti.png" alt="Infiniti">
+                                    <img src="images/content/auto_icon/Infiniti_hover.png" alt="Infiniti">
+                                </span>
+
+                                <span class="wrap-link-auto">
+                                    <a href="#" class="link-category-auto">Infiniti</a>
+                                </span>
+                            </li>
+
+                            <li class="box-category-auto">
+                                <span class="wrap-foto-auto">
+                                    <img src="images/content/auto_icon/Jeep.png" alt="Jeep">
+                                    <img src="images/content/auto_icon/Jeep_hover.png" alt="Jeep">
+                                </span>
+
+                                <span class="wrap-link-auto">
+                                    <a href="#" class="link-category-auto">Jeep</a>
+                                </span>
+                            </li>
+
+                            <li class="box-category-auto">
+                                <span class="wrap-foto-auto">
+                                    <img src="images/content/auto_icon/kia.png" alt="Kia">
+                                    <img src="images/content/auto_icon/kia_hover.png" alt="Kia">
+                                </span>
+
+                                <span class="wrap-link-auto">
+                                    <a href="#" class="link-category-auto">Kia</a>
+                                </span>
+                            </li>
+
+                            <li class="box-category-auto">
+                                <span class="wrap-foto-auto">
+                                    <img src="images/content/auto_icon/Land_Rover.png" alt="Land Rover">
+                                    <img src="images/content/auto_icon/Land_Rover_hover.png" alt="Land Rover">
+                                </span>
+
+                                <span class="wrap-link-auto">
+                                    <a href="#" class="link-category-auto">Land Rover</a>
+                                </span>
+                            </li>
+
+                            <li class="box-category-auto">
+                                <span class="wrap-foto-auto">
+                                    <img src="images/content/auto_icon/Lexus.png" alt="Lexus">
+                                    <img src="images/content/auto_icon/Lexus_hover.png" alt="Lexus">
+                                </span>
+
+                                <span class="wrap-link-auto">
+                                    <a href="#" class="link-category-auto">Lexus</a>
+                                </span>
+                            </li>
+
+                            <li class="box-category-auto">
+                                <span class="wrap-foto-auto">
+                                    <img src="images/content/auto_icon/Mazda.png" alt="Mazda">
+                                    <img src="images/content/auto_icon/Mazda_hover.png" alt="Mazda">
+                                </span>
+
+                                <span class="wrap-link-auto">
+                                    <a href="#" class="link-category-auto">Mazda</a>
+                                </span>
+                            </li>
+
+                            <li class="box-category-auto">
+                                <span class="wrap-foto-auto">
+                                    <img src="images/content/auto_icon/Mercedes.png" alt="Mercedes">
+                                    <img src="images/content/auto_icon/Mercedes_hover.png" alt="Mercedes">
+                                </span>
+
+                                <span class="wrap-link-auto">
+                                    <a href="#" class="link-category-auto">Mercedes</a>
+                                </span>
+                            </li>
+
+                            <li class="box-category-auto">
+                                <span class="wrap-foto-auto">
+                                    <img src="images/content/auto_icon/Mitsubishi.png" alt="Mitsubishi">
+                                    <img src="images/content/auto_icon/Mitsubishi_hover.png" alt="Mitsubishi">
+                                </span>
+
+                                <span class="wrap-link-auto">
+                                    <a href="#" class="link-category-auto">Mitsubishi</a>
+                                </span>
+                            </li>
+
+                            <li class="box-category-auto">
+                                <span class="wrap-foto-auto">
+                                    <img src="images/content/auto_icon/Nissan.png" alt="Nissan">
+                                    <img src="images/content/auto_icon/Nissan_hover.png" alt="Nissan">
+                                </span>
+
+                                <span class="wrap-link-auto">
+                                    <a href="#" class="link-category-auto">Chevrolet</a>
+                                </span>
+                            </li>
+
+                            <li class="box-category-auto">
+                                <span class="wrap-foto-auto">
+                                    <img src="images/content/auto_icon/Opel.png" alt="Opel">
+                                    <img src="images/content/auto_icon/Opel_hover.png" alt="Opel">
+                                </span>
+
+                                <span class="wrap-link-auto">
+                                    <a href="#" class="link-category-auto">Opel</a>
+                                </span>
+                            </li>
+
+                            <li class="box-category-auto">
+                                <span class="wrap-foto-auto">
+                                    <img src="images/content/auto_icon/Peugeot.png" alt="Peugeot">
+                                    <img src="images/content/auto_icon/Peugeot_hover.png" alt="Peugeot">
+                                </span>
+
+                                <span class="wrap-link-auto">
+                                    <a href="#" class="link-category-auto">Peugeot</a>
+                                </span>
+                            </li>
+
+                            <li class="box-category-auto">
+                                <span class="wrap-foto-auto">
+                                    <img src="images/content/auto_icon/Renault.png" alt="Renault">
+                                    <img src="images/content/auto_icon/Renault_hover.png" alt="Renault">
+                                </span>
+
+                                <span class="wrap-link-auto">
+                                    <a href="#" class="link-category-auto">Renault</a>
+                                </span>
+                            </li>
+
+                            <li class="box-category-auto">
+                                <span class="wrap-foto-auto">
+                                    <img src="images/content/auto_icon/Skoda.png" alt="Skoda">
+                                    <img src="images/content/auto_icon/Skoda_hover.png" alt="Skoda">
+                                </span>
+
+                                <span class="wrap-link-auto">
+                                    <a href="#" class="link-category-auto">Skoda</a>
+                                </span>
+                            </li>
+
+                            <li class="box-category-auto">
+                                <span class="wrap-foto-auto">
+                                    <img src="images/content/auto_icon/Subaru.png" alt="Subaru">
+                                    <img src="images/content/auto_icon/Subaru_hover.png" alt="Subaru">
+                                </span>
+
+                                <span class="wrap-link-auto">
+                                    <a href="#" class="link-category-auto">Subaru</a>
+                                </span>
+                            </li>
+
+                            <li class="box-category-auto">
+                                <span class="wrap-foto-auto">
+                                    <img src="images/content/auto_icon/Suzuki.png" alt="Suzuki">
+                                    <img src="images/content/auto_icon/Suzuki_hover.png" alt="Suzuki">
+                                </span>
+
+                                <span class="wrap-link-auto">
+                                    <a href="#" class="link-category-auto">Suzuki</a>
+                                </span>
+                            </li>
+
+                            <li class="box-category-auto">
+                                <span class="wrap-foto-auto">
+                                    <img src="images/content/auto_icon/Toyota.png" alt="Toyota">
+                                    <img src="images/content/auto_icon/Toyota_hover.png" alt="Toyota">
+                                </span>
+
+                                <span class="wrap-link-auto">
+                                    <a href="#" class="link-category-auto">Toyota</a>
+                                </span>
+                            </li>
+
+                            <li class="box-category-auto">
+                                <span class="wrap-foto-auto">
+                                    <img src="images/content/auto_icon/Volkswagen.png" alt="Volkswagen">
+                                    <img src="images/content/auto_icon/Volkswagen_hover.png" alt="Volkswagen">
+                                </span>
+
+                                <span class="wrap-link-auto">
+                                    <a href="#" class="link-category-auto">Volkswagen</a>
+                                </span>
+                            </li>
+
+                            <li class="box-category-auto">
+                                <span class="wrap-foto-auto">
+                                    <img src="images/content/auto_icon/Volvo.png" alt="Volvo">
+                                    <img src="images/content/auto_icon/Volvo_hover.png" alt="Volvo">
+                                </span>
+
+                                <span class="wrap-link-auto">
+                                    <a href="#" class="link-category-auto">Volvo</a>
+                                </span>
+                            </li>
+
+                            <li class="box-category-auto">
+                                <span class="wrap-foto-auto">
+                                    <img src="images/content/auto_icon/VAZ.png" alt="ВАЗ">
+                                    <img src="images/content/auto_icon/VAZ_hover.png" alt="ВАЗ">
+                                </span>
+
+                                <span class="wrap-link-auto">
+                                    <a href="#" class="link-category-auto">ВАЗ</a>
+                                </span>
+                            </li>
+
+                            <li class="box-category-auto">
+                                <span class="wrap-foto-auto">
+                                    <img src="images/content/auto_icon/GAZ.png" alt="ГАЗ">
+                                    <img src="images/content/auto_icon/GAZ_hover.png" alt="ГАЗ">
+                                </span>
+
+                                <span class="wrap-link-auto">
+                                    <a href="#" class="link-category-auto">ГАЗ</a>
+                                </span>
+                            </li>
+                        </ul>
+                    </li>
+
+
+                    <li>
+                        <ul class="list-auto-type">
+                            <li class="box-category-auto2">
+                                <span class="wrap-foto-auto2">
+                                    <img src="images/content/auto_icon/miniven.png" alt="Минивэны">
+                                </span>
+
+                                <span class="wrap-link-auto">
+                                    <a href="#" class="link-category-auto">Минивэны</a>
+                                </span>
+                            </li>
+
+
+                            <li class="box-category-auto2">
+                                <span class="wrap-foto-auto2">
+                                    <img src="images/content/auto_icon/vnegoroshnik.png" alt="Внедорожники">
+                                </span>
+
+                                <span class="wrap-link-auto">
+                                    <a href="#" class="link-category-auto">Внедорожники</a>
+                                </span>
+                            </li>
+
+                            <li class="box-category-auto2">
+                                <span class="wrap-foto-auto2">
+                                    <img src="images/content/auto_icon/universal.png" alt="Универсалы">
+                                </span>
+
+                                <span class="wrap-link-auto">
+                                    <a href="#" class="link-category-auto">Универсалы</a>
+                                </span>
+                            </li>
+
+                            <li class="box-category-auto2">
+                                <span class="wrap-foto-auto2">
+                                    <img src="images/content/auto_icon/sedan.png" alt="Седаны">
+                                </span>
+
+                                <span class="wrap-link-auto">
+                                    <a href="#" class="link-category-auto">Седаны</a>
+                                </span>
+                            </li>
+
+                            <li class="box-category-auto2">
+                                <span class="wrap-foto-auto2">
+                                    <img src="images/content/auto_icon/hetchbeki.png" alt="Хэтчбэки">
+                                </span>
+
+                                <span class="wrap-link-auto">
+                                    <a href="#" class="link-category-auto">Хэтчбэки</a>
+                                </span>
+                            </li>
+
+                            <li class="box-category-auto2">
+                                <span class="wrap-foto-auto2">
+                                    <img src="images/content/auto_icon/pickup.png" alt="Пикапы">
+                                </span>
+
+                                <span class="wrap-link-auto">
+                                    <a href="#" class="link-category-auto">Пикапы</a>
+                                </span>
+                            </li>
+
+                            <li class="box-category-auto2">
+                                <span class="wrap-foto-auto2">
+                                    <img src="images/content/auto_icon/kupe.png" alt="Купе">
+                                </span>
+
+                                <span class="wrap-link-auto">
+                                    <a href="#" class="link-category-auto">Купе</a>
+                                </span>
+                            </li>
+
+                            <li class="box-category-auto2">
+                                <span class="wrap-foto-auto2">
+                                    <img src="images/content/auto_icon/furgony.png" alt="Фургоны">
+                                </span>
+
+                                <span class="wrap-link-auto">
+                                    <a href="#" class="link-category-auto">Фургоны</a>
+                                </span>
+                            </li>
+
+                            <li class="box-category-auto2">
+                                <span class="wrap-foto-auto2">
+                                    <img src="images/content/auto_icon/cabriolety.png" alt="Кабриолеты">
+                                </span>
+
+                                <span class="wrap-link-auto">
+                                    <a href="#" class="link-category-auto">Кабриолеты</a>
+                                </span>
+                            </li>
+                        </ul><!--end LIST TYPE-->
+                    </li>
+
+                    <li>
+                        <ul class="list-auto-city">
+                            <li class="box-category-auto2 indent-b-20">
+                                <div class="header-city">Минская область</div>
+                                <a href="#" class="link-category-auto">Минск</a>,
+                                <a href="#" class="link-category-auto">Минск</a>,
+                                <a href="#" class="link-category-auto">Минск</a>
+                            </li>
+
+                            <li class="box-category-auto2 indent-b-20">
+                                <div class="header-city">Минская область</div>
+                                <a href="#" class="link-category-auto">Минск</a>,
+                                <a href="#" class="link-category-auto">Минск</a>,
+                                <a href="#" class="link-category-auto">Минск</a>
+                            </li>
+
+                            <li class="box-category-auto2 indent-b-20">
+                                <div class="header-city">Минская область</div>
+                                <a href="#" class="link-category-auto">Минск</a>,
+                                <a href="#" class="link-category-auto">Минск</a>,
+                                <a href="#" class="link-category-auto">Минск</a>
+                            </li>
+
+                            <li class="box-category-auto2 indent-b-20">
+                                <div class="header-city">Гомельская область</div>
+                                <a href="#" class="link-category-auto">Гомель</a>,
+                                <a href="#" class="link-category-auto">Гомель</a>,
+                                <a href="#" class="link-category-auto">Гомель</a>
+                            </li>
+
+                            <li class="box-category-auto2 indent-b-20">
+                                <div class="header-city">Гомельская область</div>
+                                <a href="#" class="link-category-auto">Гомель</a>,
+                                <a href="#" class="link-category-auto">Гомель</a>,
+                                <a href="#" class="link-category-auto">Гомель</a>,
+                                <a href="#" class="link-category-auto">Гомель</a>,
+                                <a href="#" class="link-category-auto">Гомель</a>
+                            </li>
+
+                            <li class="box-category-auto2 indent-b-20">
+                                <div class="header-city">Гомельская область</div>
+                                <a href="#" class="link-category-auto">Гомель</a>,
+                                <a href="#" class="link-category-auto">Гомель</a>,
+                                <a href="#" class="link-category-auto">Гомель</a>
+                            </li>
+                        </ul><!--end LIST CITY-->
+                    </li>
+                </ul>
+
+                <div class="empty-box">
+                    <span class="size-empty-box">728X90</span>
+                </div>
+
+                <footer class="footer-section indent-for-footer">
+                    <ul class="list-advantage">
+                        <li class="first-advantage">Быстро</li>
+
+                        <li class="second-advantage">Бесплатно</li>
+
+                        <li class="third-advantage">Без регистрации</li>
+                    </ul>
+
+                    <input class="bt-show-red bt-ad float-l" type="button" value="Подать объявление">
+                </footer>
+            </div><!--end WRAP LIST CARS-->
+
+            <div class="section box-autoservices">
+                <h2 class="h2 indent-m-2">Автосервисы</h2>
+
+                <ul id="list-autoservice-auto_js" class="list-autoservice-auto">
+                    <li class="active-category-auto">
+                        <a href="#">СТО</a>
+                    </li>
+
+                    <li>
+                        <a href="#">Прокат авто</a>
+                    </li>
+
+                    <li>
+                        <a href="#">Автодиллеры</a>
+                    </li>
+
+                    <li>
+                        <a href="#">Грузоперевозки</a>
+                    </li>
+                </ul><!--end LIST FILTER AUTO-->
+
+                <ul class="wrap-all-category-autoservice indent-b-20">
+                    <li class="show_js">
+                        <ul class="list-sto">
+                            <li>
+                                <img class="foto-autoservices" src="images/content/foto-autoservices.jpg" alt="Foto"/>
+
+                                <div class="box-address">
+                                    <div class="">
+                                        <div class="over-hide">
+                                            <header class="float-l"><a href="#">БелАвтоСервис</a></header>
+
+                                            <div class="box-review">
+                                                <ul class="list-stars">
+                                                    <li class="full-star">1</li>
+                                                    <li class="full-star">2</li>
+                                                    <li class="half-star">3</li>
+                                                    <li class="empty-star">4</li>
+                                                    <li class="empty-star">5</li>
+                                                </ul>
+                                                <span>Средняя оценка <span class="average">4.5</span>,
+                                                    Отзывов <a href="#">15</a>
+                                                </span>
+                                            </div><!--end BOX-REVIEW-->
+                                        </div>
+
+                                        <span class="address-autoservice">Минск, ул. Куприянова, 4</span>
+                                        <a href="#" class="bt-toggle bt-advanced-search">На карте</a>
+                                    </div><!--end BOX ADDRESS-->
+
+
+                                </div><!--end CLEARFIX-->
+
+                                <span class="tel-autoservice">+375 29 3216548, +375 29 3216548</span>
+                            </li>
+                        </ul><!--end LIST STO-->
+                    </li>
+
+                    <li>
+                        <ul class="list-car-rental"><li>22222</li></ul>
+                    </li>
+
+                    <li>
+                        <ul class="list-dealers"><li>3333333333333</li></ul>
+                    </li>
+
+                    <li>
+                        <ul class="list-trucking"><li>4444444</li></ul>
+                    </li>
+                </ul>
+
+                <table class="list-autoservice">
+                    <tr>
+                        <td>
+                            <a href="#">АЗС</a>
+                        </td>
+
+                        <td>
+                            <a href="#">Грузоперевозки</a>
+                        </td>
+
+                        <td>
+                            <a href="#">Автодиллеры</a>
+                        </td>
+
+                        <td>
+                            <a href="#">Автостоянки</a>
+                        </td>
+
+                        <td>
+                            <a href="#">Автохаусы</a>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <a href="#">Шиномонтаж</a>
+                        </td>
+
+                        <td>
+                            <a href="#">Автомойки</a>
+                        </td>
+
+                        <td>
+                            <a href="#">СТО</a>
+                        </td>
+
+                        <td>
+                            <a href="#">Автопрокат</a>
+                        </td>
+
+                        <td>
+                            <a href="#">Автошколы</a>
+                        </td>
+                    </tr>
+                </table>
+            </div><!--end BOX AUTOSERVICES-->
+
+            <div class="section wrap-box-news">
+                <h2>Новости</h2>
+
+                <div class="box-news">
+                    <article class="main-article-news">
+                        <img class="foto-main-article-autosport" src="images/content/main-foto-car.jpg" alt="Foto">
+
+                        <header>
+                            <a href="#">Водитель маршрутки столкнулся с мотоциклистом из-за потери управления</a>
+                        </header>
+                        <p>Один из очевидцев аварии сообщил, что молодой человек, управляющий мотоциклом начал резко...</p>
+
+                        <footer>
+                            <span class="date-article">20.06.2014, 11:03</span>
+                            <ul class="info-about-article">
+                                <li class="info-about-article-camera">(55)</li>
+                                <li class="info-about-article-review">(12345)</li>
+                                <li class="info-about-article-comment">(1223)</li>
+                            </ul>
+                        </footer>
+                    </article>
+                </div>
+
+                <div class="slider-wrap">
+                    <div class="jcarousel-wrapper">
+                        <div class="jcarousel">
+                            <ul>
+                                <li class="sub-article-news">
+                                    <article>
+                                        <img class="foto-article-news" src="images/content/foto_car_article.jpg" alt="foto">
+
+                                        <header>
+                                            <a href="#">Водитель маршрутки столкнулся с мотоциклистом из-за потери управления</a>
+                                        </header>
+                                        <p>Один из очевидцев аварии сообщил, что молодой человек, управляющий мотоциклом начал резко...</p>
+
+                                        <footer>
+                                            <span class="date-article">20.06.2014, 11:03</span>
+                                            <ul class="info-about-article">
+                                                <li class="info-about-article-camera">(55)</li>
+                                                <li class="info-about-article-review">(12345)</li>
+                                                <li class="info-about-article-comment">(1223)</li>
+                                            </ul>
+                                        </footer>
+                                    </article>
+                                </li>
+
+                                <li class="sub-article-news">
+                                    <article>
+                                        <img class="foto-article-news" src="images/content/foto_car_article.jpg" alt="foto">
+
+                                        <header>
+                                            <a href="#">Водитель маршрутки столкнулся с мотоциклистом из-за потери управления</a>
+                                        </header>
+                                        <p>Один из очевидцев аварии сообщил, что молодой человек, управляющий мотоциклом начал резко...</p>
+
+                                        <footer>
+                                            <span class="date-article">20.06.2014, 11:03</span>
+                                            <ul class="info-about-article">
+                                                <li class="info-about-article-camera">(55)</li>
+                                                <li class="info-about-article-review">(12345)</li>
+                                                <li class="info-about-article-comment">(1223)</li>
+                                            </ul>
+                                        </footer>
+                                    </article>
+                                </li>
+
+                                <li class="sub-article-news">
+                                    <article>
+                                        <img class="foto-article-news" src="images/content/foto_car_article.jpg" alt="foto">
+
+                                        <header>
+                                            <a href="#">Водитель маршрутки столкнулся с мотоциклистом из-за потери управления</a>
+                                        </header>
+                                        <p>Один из очевидцев аварии сообщил, что молодой человек, управляющий мотоциклом начал резко...</p>
+
+                                        <footer>
+                                            <span class="date-article">20.06.2014, 11:03</span>
+                                            <ul class="info-about-article">
+                                                <li class="info-about-article-camera">(55)</li>
+                                                <li class="info-about-article-review">(12345)</li>
+                                                <li class="info-about-article-comment">(1223)</li>
+                                            </ul>
+                                        </footer>
+                                    </article>
+                                </li>
+                                <li class="sub-article-news">
+                                    <article>
+                                        <img class="foto-article-news" src="images/content/foto_car_article.jpg" alt="foto">
+
+                                        <header>
+                                            <a href="#">Водитель маршрутки столкнулся с мотоциклистом из-за потери управления</a>
+                                        </header>
+                                        <p>Один из очевидцев аварии сообщил, что молодой человек, управляющий мотоциклом начал резко...</p>
+
+                                        <footer>
+                                            <span class="date-article">20.06.2014, 11:03</span>
+                                            <ul class="info-about-article">
+                                                <li class="info-about-article-camera">(55)</li>
+                                                <li class="info-about-article-review">(12345)</li>
+                                                <li class="info-about-article-comment">(1223)</li>
+                                            </ul>
+                                        </footer>
+                                    </article>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <a href="#" class="jcarousel-control-prev">&lsaquo;</a>
+                        <a href="#" class="jcarousel-control-next">&rsaquo;</a>
+                    </div>
+                </div><!--end SLIDER WRAP-->
+
+                <footer class="footer-section">
+                    <div class="empty-box">
+                        <span class="size-empty-box">728X90</span>
+                    </div>
+                </footer>
+            </div><!--end WRAP BOX NEWS-->
+
+            <div class="section box-benefits">
+                <h2>Почему Forsage?</h2>
+
+                <div class="slider-wrap2">
+                    <div class="jcarousel-wrapper">
+                        <div class="jcarousel2">
+                            <ul class="list-benefits">
+                                <li class="sub-article-news">
+                                    <div class="icon-benefits">
+                                        <img src="images/content/new_clients.png" alt="new client">
+                                    </div>
+
+                                    <h3 class="header-benefits">Новые<br>клиенты</h3>
+                                    <p>Посещаемость нашего каталога составляет 30000 уникальных посетителей в месяц,
+                                        70% пользователей впервые увидят Ваш сервис.</p>
+                                </li>
+
+                                <li class="sub-article-news">
+                                    <div class="icon-benefits">
+                                        <img src="images/content/max_opportunity.png" alt="new client">
+                                    </div>
+
+                                    <h3 class="header-benefits">Максимум возможностей</h3>
+                                    <p>Размещение на карте, добавление видео, фотографий, ссылки на сайт.</p>
+                                </li>
+
+                                <li class="sub-article-news">
+                                    <div class="icon-benefits">
+                                        <img src="images/content/little_price.png" alt="new client">
+                                    </div>
+
+                                    <h3 class="header-benefits">Низкие<br>цены</h3>
+                                    <p>Платные тарифы от 15у.е., минимум сторонней рекламы, всего три рекламных места.</p>
+                                </li>
+
+                                <li class="sub-article-news">
+                                    <div class="icon-benefits">
+                                        <img src="images/content/little_price.png" alt="new client">
+                                    </div>
+
+                                    <h3 class="header-benefits">Низкие<br>цены</h3>
+                                    <p>Платные тарифы от 15у.е., минимум сторонней рекламы, всего три рекламных места.</p>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <a href="#" class="jcarousel-control-prev2">&lsaquo;</a>
+                        <a href="#" class="jcarousel-control-next2">&rsaquo;</a>
+                    </div>
+                </div><!--end SLIDER WRAP-->
+            </div><!--end BOX BENEFITS-->
+        </div><!--end content-->
+
+        <aside class="side-bar">
+            <div class="banner-aside">
+                <span class="size-empty-box">240X400</span>
+            </div>
+			
+			<div class="widget widget-subscription">
+				<div class="h2">Подписка на авто</div>
+
+				<div class="box-subscription">
+					<span class="description-subscription">Ничего подходящего не нашли? Найдем и вышлем Вам на почту!</span>
+
+					<form id="submit-subscription_js" class="form-subscription" action="#" method="post">
+						<ul class="form-add-auto">
+							<li>
+								<span class="name-select-subscription">Марка</span>
+								<label class="custom-select-bg">
+									<select class="select-subscription custom-select_js">
+										<option>111</option>
+										<option>222</option>
+									</select>
+								</label>
+							</li>
+
+							<li>
+								<span class="name-select-subscription">Модель</span>
+								<label class="custom-select-bg">
+									<select class="select-subscription custom-select_js">
+										<option>111</option>
+										<option>222</option>
+									</select>
+								</label>
+							</li>
+
+							<li>
+								<span class="name-select-subscription">Год выпуска</span>
+								<label class="custom-select-bg">
+									<select class="select-subscription custom-select_js">
+										<option>111</option>
+										<option>222</option>
+									</select>
+								</label>
+							</li>
+
+							<li>
+								<span class="name-select-subscription">Кузов</span>
+								<label class="custom-select-bg">
+									<select class="select-subscription custom-select_js">
+										<option>111</option>
+										<option>222</option>
+									</select>
+								</label>
+							</li>
+
+							<li>
+								<span class="name-select-subscription">Тип топлива</span>
+								<label class="custom-select-bg">
+									<select id="aaa" class="select-subscription custom-select_js">
+										<option>111</option>
+										<option>222</option>
+									</select>
+								</label>
+							</li>
+
+							<li class="two-coloum">
+								<span class="name-select-subscription">Цена, $</span>
+								<input class="bt-price-subscription input-subscription indent-r-10 placeholder_js" type="text" placeholder="От">
+								<input class="bt-price-subscription input-subscription placeholder_js" type="text" placeholder="До">
+							</li>
+
+							<li>
+								<span class="name-select-subscription">Email</span>
+								<input id="valid-email_js" class="input-subscription responsive-email" type="text">
+							</li>
+						</ul>
+
+						<input id="bt-subscription_js" type="submit" class="bt-subscription bt-show-red width-input" value="Подписаться">
+					</form>
+				</div><!--end BOX SUBSCRIPTION-->
+			</div>
+
+            <div class="box-banner-link">
+                <a href="#">Здесь идет какой-то текст рекламной ссылки.</a>
+            </div>
+			
+			<div class="widget widget-special-placement">
+				<div class="h2">Спецразмещение</div>
+				<div class="box-special-placement">
+					<div class="adv-action popup-tooltip_js">
+						<i class="fa fa-lightbulb-o"></i>
+						<span><a href="#">Разместиться здесь</a></span>
+					</div>
+
+					<div class="slider-wrap3">
+						<div class="jcarousel-wrapper">
+							<div class="jcarousel3">
+								<ul class="list-benefits">
+									<li class="sub-article-news">
+										<article class="ad-sidebar">
+											<img src="images/SideBar/foto_sidebar.jpg" alt="Foto">
+
+											<div class="clearfix">
+												<a href="#" class="name-ad-sidebar">Opel Meriva Enjoy</a>
+												<span class="price-ad-sidebar">$8000</span>
+											</div>
+											<footer class="info-ad-sidebar">Минск, 2007 г.в., 1,7л</footer>
+										</article>
+									</li>
+
+									<li class="sub-article-news">
+										<article class="ad-sidebar">
+											<img src="images/SideBar/foto_sidebar.jpg" alt="Foto">
+
+											<div class="clearfix">
+												<a href="#" class="name-ad-sidebar">Opel Meriva Enjoy</a>
+												<span class="price-ad-sidebar">$8000</span>
+											</div>
+											<footer class="info-ad-sidebar">Минск, 2007 г.в., 1,7л</footer>
+										</article>
+									</li>
+
+									<li class="sub-article-news">
+										<article class="ad-sidebar">
+											<img src="images/SideBar/foto_sidebar.jpg" alt="Foto">
+
+											<div class="clearfix">
+												<a href="#" class="name-ad-sidebar">Opel Meriva Enjoy</a>
+												<span class="price-ad-sidebar">$8000</span>
+											</div>
+											<footer class="info-ad-sidebar">Минск, 2007 г.в., 1,7л</footer>
+										</article>
+									</li>
+								</ul>
+							</div>
+
+							<a href="#" class="jcarousel-control-prev3">&lsaquo;</a>
+							<a href="#" class="jcarousel-control-next3">&rsaquo;</a>
+						</div>
+					</div><!--end SLIDER WRAP-->
+				</div><!--end BOX SPECIAL PLACEMENT-->
+			</div>
+			
+			<div class="widget widget-fuel-prices">
+				<div class="h2">Цены на топливо</div>
+				<ul class="box-fuel-prices">
+					<li>
+						<span class="left-column-fuel-prices">Марки на топливо</span>
+						<span class="right-column-fuel-prices">Цена</span>
+					</li>
+
+					<li>
+						<span class="left-column-fuel-prices">Бензин АИ-92</span>
+						<span class="right-column-fuel-prices">4585</span>
+					</li>
+
+					<li>
+						<span class="left-column-fuel-prices">Бензин АИ-95</span>
+						<span class="right-column-fuel-prices">1258</span>
+					</li>
+
+					<li>
+						<span class="left-column-fuel-prices">Бензин Н-80</span>
+						<span class="right-column-fuel-prices">286</span>
+					</li>
+
+					<li>
+						<span class="left-column-fuel-prices">Дизельное топливо</span>
+						<span class="right-column-fuel-prices">25</span>
+					</li>
+
+					<li>
+						<span class="left-column-fuel-prices">Газ</span>
+						<span class="right-column-fuel-prices">75</span>
+					</li>
+
+					<li>
+						Официально установленные концерном "Белнефтехим" цены
+					</li>
+				</ul><!--end BOX FUEL PRICES-->
+			</div>
+        </aside><!--end SIDEBAR-->
+    </div><!--end WRAPPER-->
+
+    <div class="wrap-footer">
+        <footer class="footer">
+            <a class="footer-logo" href="#">
+                <img src="images/footer/logo_footer.png" alt="Forsage">
+            </a>
+
+            <div class="box-right">
+                <div class="copyright-box">
+                    <span>2010-2014. Все права защищены</span>
+                    <span>Форсаж.BY. Автомобильный портал</span>
+                </div>
+
+                <div class="partners-footer">
+                    <a href="#">Пользовательское соглашение</a>
+                    <a href="#">Конфиденциальность информации</a>
+                    <a class="partners-foto" href="#">
+                        <img src="images/footer/openby.png" alt="open.by">
+                    </a>
+                </div>
+            </div>
+
+            <ul class="nav-footer">
+                <li>
+                    <a href="#">О проекте</a>
+                </li>
+
+                <li>
+                    <a href="#">Карта сайта</a>
+                </li>
+
+                <li>
+                    <a href="#">Рекламодателям</a>
+                </li>
+
+                <li>
+                    <a href="#">Контакты</a>
+                </li>
+            </ul>
+        </footer>
+    </div>
+
+    <!--POPUP WINDOWS-->
+    <div id="bg-popup">
+        <div id="wrap-popup">
+            <form id="popup-reg" action="#" method="post">
+                <span class="sell-car">Продать машину быстрее через блок спецразмещения</span>
+
+                <header>
+                    <div>Основные проблемы обычного размещения</div>
+                </header>
+                <ul class="list-advantage-placement">
+                    <li class="first-advantage-placement">
+                        <span>Ничем не отличается от остальных</span>
+                    </li>
+                    <li class="second-advantage-placement">
+                        <span>Быстро спускается вниз, т.к. появляются новые</span>
+                    </li>
+                    <li class="third-advantage-placement">
+                        <span>Рассчитывали продать быстро, а приходится ждать</span>
+                    </li>
+                </ul>
+
+                <div class="reg-block-1">
+                    <div class="black our-help-1">Мы вам поможем <span class="red">получить деньги <br>за машину быстрее</span></div>
+                    <div class="our-help-2">Разместим в самых выгодных местах сайта <br>в спецразмещении (будет первым в блоке, пока <br>не разместит кто-либо другой)</div>
+                </div>
+
+                <div class="reg-block-2">
+                    <div class="black">Размещенное в блоке объявление просматривают <span class="red">в 8-12 раз больше обычных</span></div>
+                </div>
+
+                <div id="unregistered-box" class="show_js">
+                    <div class="unreg-tooltip"><span>Для размещения в блоке<br/><b>авторизуйтесь</b></span></div>
+                </div><!--end UNREGISTERED-BOX-->
+
+                <div id="registered-box">
+                    <span class="reg-tooltip">Как здесь разместиться?</span>
+
+                    <ul class="list-placement">
+                        <li>
+                            <span class="name-select-placement">Выберите вариант пополнения</span>
+                            <label class="custom-select-bg">
+                                <select class="select-placement">
+                                    <option>МТС</option>
+                                    <option>BeeLine</option>
+                                </select>
+                            </label>
+                            <img src="images/popup/MTC.jpg" alt="МТС">
+                        </li>
+
+                        <li>
+                            <span class="name-select-placement">Количество автоматических поднятий</span>
+                            <label class="custom-select-bg">
+                                <select class="select-placement">
+                                    <option>50</option>
+                                    <option>100</option>
+                                    <option>200</option>
+                                </select>
+                            </label>
+                        </li>
+
+                        <li>
+                            <span class="name-select-placement">Срок поднятий</span>
+                            <label class="custom-select-bg">
+                                <select class="select-placement">
+                                    <option>1 день</option>
+                                    <option>2 дня</option>
+                                    <option>4 дня</option>
+                                    <option>7 дней</option>
+                                </select>
+                            </label>
+                        </li>
+                    </ul>
+
+                    <span class="terms-service">
+                        <input type="checkbox" id="check-terms-service">
+                        <a href="#">Условия предоставления услуг</a>
+                    </span>
+
+                    <div class="total-payment">
+                        <span>Итого к оплате: 27500 руб.</span>
+                        <input type="submit" value="Оплатить">
+                    </div>
+                </div><!--end REGISTERED-BOX-->
+            </form>
+
+            <div class="wrap-reg-autoreg-form">
+                <ul id="list-reg-link_js" class="clearfix">
+                    <li class="active-page">
+                        <a id="link-reg" class="bt-toggle bt-advanced-search bt-reg" href="#">Регистрация</a>
+                    </li>
+                    <li>
+                        <a id="link-autoreg" class="bt-toggle bt-advanced-search bt-reg" href="#">Авторизация</a>
+                    </li>
+                </ul>
+
+                <form id="reg-form" action="#" method="post">
+                    <ul class="list-reg-inputs">
+                        <li>
+                            <label>
+                                <span class="icon-star">Логин</span>
+                                <input type="text">
+                            </label>
+                            <span class="tooltip-form">?</span>
+                        </li>
+
+                        <li>
+                            <label>
+                                <span class="icon-star">Пароль</span>
+                                <input type="text">
+                            </label>
+                            <span class="tooltip-form">?</span>
+                        </li>
+
+                        <li>
+                            <label>
+                                <span class="icon-star">E-mail</span>
+                                <input type="text">
+                            </label>
+                        </li>
+
+                        <li class="reg-captcha">
+                            <label>
+                                <span class="icon-star">Введите код</span>
+                                <img src="images/popup/captcha.jpg" alt="Капча">
+                                <input type="text">
+                            </label>
+                            <span class="tooltip-form">?</span>
+                        </li>
+                    </ul>
+
+                    <input class="bt-show-red no-margin" type="submit" value="Зарегестрироваться">
+                    <a class="recover-pass" href="#">Восстановить пароль</a>
+                </form><!--end REG FORM-->
+
+                <form id="autoreg-form" action="#" method="post">
+                    <ul class="list-reg-inputs">
+                        <li>
+                            <label>
+                                <span class="icon-star">Логин</span>
+                                <input type="text">
+                            </label>
+                            <span class="tooltip-form">?</span>
+                        </li>
+
+                        <li>
+                            <label>
+                                <span class="icon-star">Пароль</span>
+                                <input type="text">
+                            </label>
+                            <span class="tooltip-form">?</span>
+                        </li>
+                    </ul><!--end AUTOREG FORM-->
+
+                    <span class="name-list-soc-link">Войти через</span>
+                    <ul class="list-soc-link">
+                        <li class="icon-tw"><a href="#">twitter</a></li>
+                        <li class="icon-fb"><a href="#">facebook</a></li>
+                        <li class="icon-google"><a href="#">google+</a></li>
+                        <li class="icon-od"><a href="#">одноклассники</a></li>
+                        <li class="icon-yandex"><a href="#">яндекс</a></li>
+                        <li class="icon-vk"><a href="#">вконтакте</a></li>
+                    </ul>
+
+                    <input class="bt-show-red no-margin" type="submit" value="Войти">
+                </form><!--end AUTOREG FORM-->
+            </div><!--end WRAP REG AUTOREG FORM-->
+
+            <form id="popup-advanced-search" action="#" method="post" class="form-search-features">
+                <header>
+                    <div>Расширенный поиск</div>
+                </header>
+
+                <ul class="select-box-search-form">
+                    <!--first column-->
+                    <li>
+                        <span class="name-input">Марка</span>
+                        <label class="custom-select-bg">
+                            <select class="custom-input custom-select-height custom-select_js">
+                                <option>Audi</option>
+                                <option>Ford</option>
+                            </select>
+                        </label>
+
+                        <span class="name-input">Модель</span>
+                        <label class="custom-select-bg">
+                            <select class="custom-input custom-select-height custom-select_js">
+                                <option>GL550</option>
+                                <option>GL550</option>
+                            </select>
+                        </label>
+
+                        <span class="name-input">Год выпуска</span>
+                        <div class="clearfix">
+                            <label class="custom-select-bg width100 little-select custom-select-mini-bg float-l">
+                                <select class="custom-input custom-select-height custom-select_js">
+                                    <option>2013</option>
+                                    <option>2014</option>
+                                </select>
+                            </label>
+
+                            <label class="custom-select-bg width100 little-select custom-select-mini-bg float-r">
+                                <select class="custom-input custom-select-height custom-select_js">
+                                    <option>2013</option>
+                                    <option>2014</option>
+                                </select>
+                            </label>
+                        </div>
+                    </li>
+
+                    <!--second column-->
+                    <li>
+                        <span class="name-input">Кузов</span>
+                        <label class="custom-select-bg">
+                            <select class="custom-input custom-select-height custom-select_js">
+                                <option>Внедородник</option>
+                                <option>Внедородник</option>
+                            </select>
+                        </label>
+
+                        <span class="name-input">Тип двигателя</span>
+                        <label class="custom-select-bg">
+                            <select class="custom-input custom-select-height custom-select_js">
+                                <option>Бензин</option>
+                                <option>Бензин</option>
+                            </select>
+                        </label>
+
+                        <span class="name-input">Объем двигателя</span>
+                        <div class="clearfix">
+                            <label class="custom-select-bg width100 little-select custom-select-mini-bg float-l">
+                                <select class="custom-input custom-select-height custom-select_js">
+                                    <option>4,5л</option>
+                                    <option>7,0л</option>
+                                </select>
+                            </label>
+
+                            <label class="custom-select-bg width100 little-select custom-select-mini-bg float-r">
+                                <select class="custom-input custom-select-height custom-select_js">
+                                    <option>7,0л</option>
+                                    <option>7,0л</option>
+                                </select>
+                            </label>
+                        </div>
+                    </li>
+
+                    <!--third column-->
+                    <li>
+                        <span class="name-input">Период</span>
+                        <label class="custom-select-bg">
+                            <select class="custom-input custom-select-height custom-select_js">
+                                <option>1 месяц</option>
+                                <option>1 месяц</option>
+                            </select>
+                        </label>
+
+                        <span class="name-input">Город</span>
+                        <label class="custom-select-bg">
+                            <select class="custom-input custom-select-height custom-select_js">
+                                <option>Минск</option>
+                                <option>Минск</option>
+                            </select>
+                        </label>
+
+                        <span class="name-input">Фото</span>
+                        <label class="custom-select-bg">
+                            <select class="custom-input custom-select-height custom-select_js">
+                                <option>Необязательно</option>
+                                <option>Необязательно</option>
+                            </select>
+                        </label>
+                    </li>
+                </ul>
+
+                <div class="box-price">
+                    <div class="wrap-scale-price">
+                        <span class="name-input">Цена</span>
+
+                        <div class="sliderCont">
+                            <div id="slider1"></div>
+                        </div>
+                    </div>
+
+                    <ul class="horizontal-list-select">
+                        <li>
+                            <span class="name-input">От</span>
+                            <input id="minCost1" type="text" class="custom-input little-input" value="100">
+                        </li>
+
+                        <li>
+                            <span class="name-input">До</span>
+                            <input id="maxCost1" value="200000" type="text" class="custom-input little-input">
+                        </li>
+
+                        <li>
+                            <span class="name-input">Валюта</span>
+                            <label class="custom-select-bg">
+                                <select class="custom-input custom-select-height little-select custom-select_js">
+                                    <option>Доллар</option>
+                                    <option>Евро</option>
+                                </select>
+                            </label>
+                        </li>
+                    </ul>
+                </div><!--end BOX PRICE-->
+
+                <ul class="select-box-search-form bottom">
+                    <!--first column-->
+                    <li>
+                        <span class="name-input">Пробег</span>
+                        <div class="clearfix">
+                            <input type="text" class="custom-input custom-select-height2 little-input float-l" placeholder="100000">
+                            <input type="text" class="custom-input custom-select-height2 little-input float-l" placeholder="700000">
+                            <label class="custom-select-bg width100 custom-select-mini-bg little-select float-l">
+                                <select class="custom-input custom-select-height custom-select_js">
+                                    <option>Любой тип</option>
+                                    <option>Любой тип</option>
+                                </select>
+                            </label>
+                        </div>
+
+                        <span class="name-input">Количество дверей</span>
+                        <label class="custom-select-bg">
+                            <select class="custom-input custom-select-height custom-select_js">
+                                <option>5</option>
+                                <option>4</option>
+                                <option>2</option>
+                            </select>
+                        </label>
+
+                        <span class="name-input">КПП</span>
+                        <label class="custom-select-bg">
+                            <select class="custom-input custom-select-height custom-select_js">
+                                <option>АКПП</option>
+                                <option>МКПП</option>
+                            </select>
+                        </label>
+                    </li>
+
+                    <!--second column-->
+                    <li>
+                        <span class="name-input">Состояние</span>
+                        <label class="custom-select-bg">
+                            <select class="custom-input custom-select-height custom-select_js">
+                                <option>Любое</option>
+                                <option>Битая</option>
+                                <option>Крашенная</option>
+                            </select>
+                        </label>
+
+                        <span class="name-input">Цвет</span>
+                        <label class="custom-select-bg">
+                            <select class="custom-input custom-select-height custom-select_js">
+                                <option>Любой</option>
+                                <option>Черный</option>
+                                <option>Белый</option>
+                            </select>
+                        </label>
+
+                        <span class="name-input">Сортировать по</span>
+                        <label class="custom-select-bg">
+                            <select class="custom-input custom-select-height custom-select_js">
+                                <option>Дате добавления</option>
+                                <option>Цене</option>
+                            </select>
+                        </label>
+                    </li>
+
+                    <!--third column-->
+                    <li>
+                        <span class="name-input">Таможня</span>
+                        <label class="custom-select-bg">
+                            <select class="custom-input custom-select-height custom-select_js">
+                                <option>Любая</option>
+                                <option>Любая</option>
+                            </select>
+                        </label>
+
+                        <span class="name-input">Привод</span>
+                        <label class="custom-select-bg">
+                            <select class="custom-input custom-select-height custom-select_js">
+                                <option>Полный</option>
+                                <option>Передний</option>
+                                <option>Задний</option>
+                            </select>
+                        </label>
+                    </li>
+                </ul>
+
+                <div class="other-search-parameters">
+                    <ul class="list-other-parameters">
+                        <li class="security active">
+                            <a href="#">Безопасность</a>
+
+                            <ul class="list-values">
+                                <li>
+                                    <label>
+                                        <input type="checkbox" class="check-other-parameters">
+                                        ABS - антиблокировочная система
+                                    </label>
+                                </li>
+
+                                <li>
+                                    <label>
+                                        <input type="checkbox" class="check-other-parameters">
+                                        Airbag для водителя
+                                    </label>
+                                </li>
+
+                                <li>
+                                    <label>
+                                        <input type="checkbox" class="check-other-parameters">
+                                        Airbag для пассажира
+                                    </label>
+                                </li>
+
+                                <li>
+                                    <label class="custom-select-bg custom-select-mini-bg custom-select-mini-bg2">
+                                        <select class="select-other-parameters custom-select_js">
+                                            <option>Airbag боковые</option>
+                                            <option>Airbag боковые</option>
+                                            <option>Airbag боковые</option>
+                                        </select>
+                                    </label>
+                                </li>
+
+                                <li>
+                                    <label>
+                                        <input type="checkbox" class="check-other-parameters">
+                                        Airbag оконные
+                                    </label>
+                                </li>
+
+                                <li>
+                                    <label>
+                                        <input type="checkbox" class="check-other-parameters">
+                                        ESP - система стабилизации
+                                    </label>
+                                </li>
+
+                                <li>
+                                    <label>
+                                        <input type="checkbox" class="check-other-parameters">
+                                        ASR - антипробуксовочная система
+                                    </label>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="additional-equipment">
+                            <a href="#">Дополнительное оборудование</a>
+
+                            <ul class="list-values">
+                                <li>
+                                    <label>
+                                        <input type="checkbox" class="check-other-parameters">
+                                        222222
+                                    </label>
+                                </li>
+
+                                <li>
+                                    <label>
+                                        <input type="checkbox" class="check-other-parameters">
+                                        Airbag для водителя
+                                    </label>
+                                </li>
+
+                                <li>
+                                    <label>
+                                        <input type="checkbox" class="check-other-parameters">
+                                        Airbag для пассажира
+                                    </label>
+                                </li>
+
+                                <li>
+                                    <label class="custom-select-bg custom-select-mini-bg custom-select-mini-bg2">
+                                        <select class="select-other-parameters custom-select_js">
+                                            <option>Airbag боковые</option>
+                                            <option>Airbag боковые</option>
+                                            <option>Airbag боковые</option>
+                                        </select>
+                                    </label>
+                                </li>
+
+                                <li>
+                                    <label>
+                                        <input type="checkbox" class="check-other-parameters">
+                                        Airbag оконные
+                                    </label>
+                                </li>
+
+                                <li>
+                                    <label>
+                                        <input type="checkbox" class="check-other-parameters">
+                                        ESP - система стабилизации
+                                    </label>
+                                </li>
+
+                                <li>
+                                    <label>
+                                        <input type="checkbox" class="check-other-parameters">
+                                        ASR - антипробуксовочная система
+                                    </label>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="hijack-protection">
+                            <a href="#">Защита от угона</a>
+
+                            <ul class="list-values">
+                                <li>
+                                    <label>
+                                        <input type="checkbox" class="check-other-parameters">
+                                        333333
+                                    </label>
+                                </li>
+
+                                <li>
+                                    <label>
+                                        <input type="checkbox" class="check-other-parameters">
+                                        Airbag для водителя
+                                    </label>
+                                </li>
+
+                                <li>
+                                    <label>
+                                        <input type="checkbox" class="check-other-parameters">
+                                        Airbag для пассажира
+                                    </label>
+                                </li>
+
+                                <li>
+                                    <label class="custom-select-bg custom-select-mini-bg custom-select-mini-bg2">
+                                        <select class="select-other-parameters custom-select_js">
+                                            <option>Airbag боковые</option>
+                                            <option>Airbag боковые</option>
+                                            <option>Airbag боковые</option>
+                                        </select>
+                                    </label>
+                                </li>
+
+                                <li>
+                                    <label>
+                                        <input type="checkbox" class="check-other-parameters">
+                                        Airbag оконные
+                                    </label>
+                                </li>
+
+                                <li>
+                                    <label>
+                                        <input type="checkbox" class="check-other-parameters">
+                                        ESP - система стабилизации
+                                    </label>
+                                </li>
+
+                                <li>
+                                    <label>
+                                        <input type="checkbox" class="check-other-parameters">
+                                        ASR - антипробуксовочная система
+                                    </label>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="sound">
+                            <a href="#">Звук</a>
+
+                            <ul class="list-values">
+                                <li>
+                                    <label>
+                                        <input type="checkbox" class="check-other-parameters">
+                                        444444
+                                    </label>
+                                </li>
+
+                                <li>
+                                    <label>
+                                        <input type="checkbox" class="check-other-parameters">
+                                        Airbag для водителя
+                                    </label>
+                                </li>
+
+                                <li>
+                                    <label>
+                                        <input type="checkbox" class="check-other-parameters">
+                                        Airbag для пассажира
+                                    </label>
+                                </li>
+
+                                <li>
+                                    <label class="custom-select-bg custom-select-mini-bg custom-select-mini-bg2">
+                                        <select class="select-other-parameters custom-select_js">
+                                            <option>Airbag боковые</option>
+                                            <option>Airbag боковые</option>
+                                            <option>Airbag боковые</option>
+                                        </select>
+                                    </label>
+                                </li>
+
+                                <li>
+                                    <label>
+                                        <input type="checkbox" class="check-other-parameters">
+                                        Airbag оконные
+                                    </label>
+                                </li>
+
+                                <li>
+                                    <label>
+                                        <input type="checkbox" class="check-other-parameters">
+                                        ESP - система стабилизации
+                                    </label>
+                                </li>
+
+                                <li>
+                                    <label>
+                                        <input type="checkbox" class="check-other-parameters">
+                                        ASR - антипробуксовочная система
+                                    </label>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="comfort">
+                            <a href="#">Комфорт</a>
+
+                            <ul class="list-values">
+                                <li>
+                                    <label>
+                                        <input type="checkbox" class="check-other-parameters">
+                                        555555
+                                    </label>
+                                </li>
+
+                                <li>
+                                    <label>
+                                        <input type="checkbox" class="check-other-parameters">
+                                        Airbag для водителя
+                                    </label>
+                                </li>
+
+                                <li>
+                                    <label>
+                                        <input type="checkbox" class="check-other-parameters">
+                                        Airbag для пассажира
+                                    </label>
+                                </li>
+
+                                <li>
+                                    <label class="custom-select-bg custom-select-mini-bg custom-select-mini-bg2">
+                                        <select class="select-other-parameters custom-select_js">
+                                            <option>Airbag боковые</option>
+                                            <option>Airbag боковые</option>
+                                            <option>Airbag боковые</option>
+                                        </select>
+                                    </label>
+                                </li>
+
+                                <li>
+                                    <label>
+                                        <input type="checkbox" class="check-other-parameters">
+                                        Airbag оконные
+                                    </label>
+                                </li>
+
+                                <li>
+                                    <label>
+                                        <input type="checkbox" class="check-other-parameters">
+                                        ESP - система стабилизации
+                                    </label>
+                                </li>
+
+                                <li>
+                                    <label>
+                                        <input type="checkbox" class="check-other-parameters">
+                                        ASR - антипробуксовочная система
+                                    </label>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="multimedia">
+                            <a href="#">Мультимедиа</a>
+
+                            <ul class="list-values">
+                                <li>
+                                    <label>
+                                        <input type="checkbox" class="check-other-parameters">
+                                        666666
+                                    </label>
+                                </li>
+
+                                <li>
+                                    <label>
+                                        <input type="checkbox" class="check-other-parameters">
+                                        Airbag для водителя
+                                    </label>
+                                </li>
+
+                                <li>
+                                    <label>
+                                        <input type="checkbox" class="check-other-parameters">
+                                        Airbag для пассажира
+                                    </label>
+                                </li>
+
+                                <li>
+                                    <label class="custom-select-bg custom-select-mini-bg custom-select-mini-bg2">
+                                        <select class="select-other-parameters custom-select_js">
+                                            <option>Airbag боковые</option>
+                                            <option>Airbag боковые</option>
+                                            <option>Airbag боковые</option>
+                                        </select>
+                                    </label>
+                                </li>
+
+                                <li>
+                                    <label>
+                                        <input type="checkbox" class="check-other-parameters">
+                                        Airbag оконные
+                                    </label>
+                                </li>
+
+                                <li>
+                                    <label>
+                                        <input type="checkbox" class="check-other-parameters">
+                                        ESP - система стабилизации
+                                    </label>
+                                </li>
+
+                                <li>
+                                    <label>
+                                        <input type="checkbox" class="check-other-parameters">
+                                        ASR - антипробуксовочная система
+                                    </label>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="overview">
+                            <a href="#">Обзор</a>
+
+                            <ul class="list-values">
+                                <li>
+                                    <label>
+                                        <input type="checkbox" class="check-other-parameters">
+                                        ABS - антиблокировочная система
+                                    </label>
+                                </li>
+
+                                <li>
+                                    <label>
+                                        <input type="checkbox" class="check-other-parameters">
+                                        777777
+                                    </label>
+                                </li>
+
+                                <li>
+                                    <label>
+                                        <input type="checkbox" class="check-other-parameters">
+                                        Airbag для пассажира
+                                    </label>
+                                </li>
+
+                                <li>
+                                    <label class="custom-select-bg custom-select-mini-bg custom-select-mini-bg2">
+                                        <select class="select-other-parameters custom-select_js">
+                                            <option>Airbag боковые</option>
+                                            <option>Airbag боковые</option>
+                                            <option>Airbag боковые</option>
+                                        </select>
+                                    </label>
+                                </li>
+
+                                <li>
+                                    <label>
+                                        <input type="checkbox" class="check-other-parameters">
+                                        Airbag оконные
+                                    </label>
+                                </li>
+
+                                <li>
+                                    <label>
+                                        <input type="checkbox" class="check-other-parameters">
+                                        ESP - система стабилизации
+                                    </label>
+                                </li>
+
+                                <li>
+                                    <label>
+                                        <input type="checkbox" class="check-other-parameters">
+                                        ASR - антипробуксовочная система
+                                    </label>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="options">
+                            <a href="#">Опции</a>
+
+                            <ul class="list-values">
+                                <li>
+                                    <label>
+                                        <input type="checkbox" class="check-other-parameters">
+                                        ABS - антиблокировочная система
+                                    </label>
+                                </li>
+
+                                <li>
+                                    <label>
+                                        <input type="checkbox" class="check-other-parameters">
+                                        888888
+                                    </label>
+                                </li>
+
+                                <li>
+                                    <label>
+                                        <input type="checkbox" class="check-other-parameters">
+                                        Airbag для пассажира
+                                    </label>
+                                </li>
+
+                                <li>
+                                    <label class="custom-select-bg custom-select-mini-bg custom-select-mini-bg2">
+                                        <select class="select-other-parameters custom-select_js">
+                                            <option>Airbag боковые</option>
+                                            <option>Airbag боковые</option>
+                                            <option>Airbag боковые</option>
+                                        </select>
+                                    </label>
+                                </li>
+
+                                <li>
+                                    <label>
+                                        <input type="checkbox" class="check-other-parameters">
+                                        Airbag оконные
+                                    </label>
+                                </li>
+
+                                <li>
+                                    <label>
+                                        <input type="checkbox" class="check-other-parameters">
+                                        ESP - система стабилизации
+                                    </label>
+                                </li>
+
+                                <li>
+                                    <label>
+                                        <input type="checkbox" class="check-other-parameters">
+                                        ASR - антипробуксовочная система
+                                    </label>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="interior">
+                            <a href="#">Салон</a>
+
+                            <ul class="list-values">
+                                <li>
+                                    <label>
+                                        <input type="checkbox" class="check-other-parameters">
+                                        ABS - антиблокировочная система
+                                    </label>
+                                </li>
+
+                                <li>
+                                    <label>
+                                        <input type="checkbox" class="check-other-parameters">
+                                        999999
+                                    </label>
+                                </li>
+
+                                <li>
+                                    <label>
+                                        <input type="checkbox" class="check-other-parameters">
+                                        Airbag для пассажира
+                                    </label>
+                                </li>
+
+                                <li>
+                                    <label class="custom-select-bg custom-select-mini-bg custom-select-mini-bg2">
+                                        <select class="select-other-parameters custom-select_js">
+                                            <option>Airbag боковые</option>
+                                            <option>Airbag боковые</option>
+                                            <option>Airbag боковые</option>
+                                        </select>
+                                    </label>
+                                </li>
+
+                                <li>
+                                    <label>
+                                        <input type="checkbox" class="check-other-parameters">
+                                        Airbag оконные
+                                    </label>
+                                </li>
+
+                                <li>
+                                    <label>
+                                        <input type="checkbox" class="check-other-parameters">
+                                        ESP - система стабилизации
+                                    </label>
+                                </li>
+
+                                <li>
+                                    <label>
+                                        <input type="checkbox" class="check-other-parameters">
+                                        ASR - антипробуксовочная система
+                                    </label>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="communication">
+                            <a href="#">Связь</a>
+
+                            <ul class="list-values">
+                                <li>
+                                    <label>
+                                        <input type="checkbox" class="check-other-parameters">
+                                        ABS - антиблокировочная система
+                                    </label>
+                                </li>
+
+                                <li>
+                                    <label>
+                                        <input type="checkbox" class="check-other-parameters">
+                                        Airbag для водителя
+                                    </label>
+                                </li>
+
+                                <li>
+                                    <label>
+                                        <input type="checkbox" class="check-other-parameters">
+                                        Airbag для пассажира
+                                    </label>
+                                </li>
+
+                                <li>
+                                    <label class="custom-select-bg custom-select-mini-bg custom-select-mini-bg2">
+                                        <select class="select-other-parameters custom-select_js">
+                                            <option>Airbag боковые</option>
+                                            <option>Airbag боковые</option>
+                                            <option>Airbag боковые</option>
+                                        </select>
+                                    </label>
+                                </li>
+
+                                <li>
+                                    <label>
+                                        <input type="checkbox" class="check-other-parameters">
+                                        Airbag оконные
+                                    </label>
+                                </li>
+
+                                <li>
+                                    <label>
+                                        <input type="checkbox" class="check-other-parameters">
+                                        ESP - система стабилизации
+                                    </label>
+                                </li>
+
+                                <li>
+                                    <label>
+                                        <input type="checkbox" class="check-other-parameters">
+                                        10 10 10 10 10
+                                    </label>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="ecology">
+                            <a href="#">Экология</a>
+
+                            <ul class="list-values">
+                                <li>
+                                    <label>
+                                        <input type="checkbox" class="check-other-parameters">
+                                        ABS - антиблокировочная система
+                                    </label>
+                                </li>
+
+                                <li>
+                                    <label>
+                                        <input type="checkbox" class="check-other-parameters">
+                                        Airbag для водителя
+                                    </label>
+                                </li>
+
+                                <li>
+                                    <label class="check-other-parameters">
+                                        <input type="checkbox" class="check-other-parameters">
+                                        Airbag для пассажира
+                                    </label>
+                                </li>
+
+                                <li>
+                                    <label class="custom-select-bg custom-select-mini-bg2 custom-select-mini-bg">
+                                        <select class="select-other-parameters custom-select_js">
+                                            <option>Airbag боковые</option>
+                                            <option>Airbag боковые</option>
+                                            <option>Airbag боковые</option>
+                                        </select>
+                                    </label>
+                                </li>
+
+                                <li>
+                                    <label class="bg-label_js">
+                                        <input type="checkbox" class="check-other-parameters">
+                                        Airbag оконные
+                                    </label>
+                                </li>
+
+                                <li>
+                                    <label>
+                                        <input type="checkbox" class="check-other-parameters">
+                                        11 11 11 11 11
+                                    </label>
+                                </li>
+
+                                <li>
+                                    <label>
+                                        <input type="checkbox" class="check-other-parameters">
+                                        ASR - антипробуксовочная система
+                                    </label>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+
+                <footer class="footer-section">
+                    <span class="result-search">Найдено: <span class="number-ad">80</span> объявлений</span>
+                    <input type="button" class="bt-show-red" value="Показать">
+                    <input type="reset" class="bt-reset" value="Очистить">
+                </footer>
+            </form><!--end POPUP ADVANCED SEARCH-->
+        </div><!--end WRAP POPUP-->
+    </div><!--end BG POPUP-->
+
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="js/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="js/jquery.jcarousel.min.js"></script>
+    <script type="text/javascript" src="js/jcarousel.responsive.js"></script>
+    <script src="js/mainJq.js"></script>
+    <script src="js/jquery.ui-slider.js"></script>
+    <script src="js/jquery.main.js"></script>
+</body>
+</html>

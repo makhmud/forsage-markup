@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Forsage - Автомобильный портал</title>
+    <link rel="stylesheet" type="text/css" href="styles/jquery-ui.css">
+    <link rel="stylesheet" type="text/css" href="styles/styles.css">
+    <link rel="stylesheet" type="text/css" href="styles/jcarousel.responsive.css">
+	<link rel="stylesheet" href="fonts/font-awesome/css/font-awesome.min.css">
+    <link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+	<link rel="shortcut icon" href="images/favicon.ico">
+	<!--[if lt IE 9]>
+	<script src="js/html5shiv.min.js"></script>
+	<![endif]-->
+</head>
+<body>
+    <header>
+        <div class="header clearfix">
+            <div class="main-logo">
+                <a href="#">
+                    <img src="images/header/main-logo.png" alt="FORSAGE.by - автомобильный портал">
+                </a>
+                <span>FORSAGE.by, автомобильный портал</span>
+            </div><!--end MAIN LOGO-->
+
+            <div class="wrap-registration display">
+                <span class="link-entry">
+                    <a href="#" id="popup-autoreg">Войдите</a>
+                </span>
+                <span>или</span>
+                <span class="link-registration">
+                    <a href="#" id="popup-registration">зарегистрируйтесь</a>
+                </span>
+            </div>
+
+            <div class="wrap-profile">
+                <img src="images/header/profile_img.jpg" alt="">
+                <a class="profile-name" href="#">Mister X</a>
+                <table class="profile-sections">
+                    <tr>
+                        <td><a href="#">Мой профиль</a></td>
+                        <td><a href="#">Мои сервисы</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="#">Мои объявления</a></td>
+                        <td><a href="#">Баланс (10250 руб.)</a></td>
+                    </tr>
+                </table>
+            </div>
+
+            <span class="add-ads">Подать объявление</span>
+        </div><!--end HEADER-->
+
+        <nav id="nav-wrap" class="bg-nav">
+            <ul id="nav" class="nav">
+                <li>
+                    <a href="#">Продажа авто</a>
+                </li>
+
+                <li>
+                    <a href="#">Автосервисы</a>
+                    <ul class="sub-menu">
+                        <li>
+                            <a href="#">СТО</a>
+                        </li>
+
+                        <li>
+                            <a href="#">Шиномонтаж</a>
+                        </li>
+
+                        <li>
+                            <a href="#">Автостоянки</a>
+                        </li>
+
+                        <li>
+                            <a href="#">Автомойки</a>
+                        </li>
+
+                        <li>
+                            <a href="#">АЗС</a>
+                        </li>
+                        
+                        <li>
+                            <a href="#">Автопрокат</a>
+                        </li>
+                        
+                        <li>
+                            <a href="#">Автодилеры</a>
+                        </li>
+                        
+                        <li>
+                            <a href="#">Автохаусы</a>
+                        </li>
+                        
+                        <li>
+                            <a href="#">Автошколы</a>
+                        </li>
+                        
+                        <li>
+                            <a href="#">Грузоперевозки</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="#">ПДД</a>
+                </li>
+
+                <li>
+                    <a href="#">Новости</a>
+                    <ul class="sub-menu">
+                       <li>
+                            <a href="#">ДТП</a>
+                        </li>
+                        <li>
+                            <a href="#">В Беларуси</a>
+                        </li>
+                        <li>
+                            <a href="#">В мире</a>
+                        </li>
+                        <li>
+                            <a href="#">Автоспорт</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="#">Ещё</a>
+                    <ul class="sub-menu">
+                        <li>
+                            <a href="#">Калькулятор растаможки</a>
+                        </li>
+                        <li>
+                            <a href="#">График цен на топливо</a>
+                        </li>
+                        <li>
+                            <a href="#">График цен на авто</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+		
+        <div class="wrap-sub-nav">
+            <div class="sub-nav">
+                <a href="#">Главная</a>
+                <a href="#">Hyundai</a>
+                <a href="#">Santa Fe</a>
+                <span>г.Минск, 2006 год за $19000</span>
+            </div>
+        </div>
+    </header>
+	
+    <div class="wrapper">
+		<div class="content-wide">
+			<div class="section">
+				<div id="tabs">
+					<ul class="clearfix">
+						<li class="ui-tabs-active"><a href="">Мой профиль</a></li>
+						<li><a href="">Мои объявления</a></li>
+						<li><a href="">Мои сервисы</a></li>
+						<li><a href="">Баланс</a></li>
+					</ul>
+					<div class="tab">
+						<div class="my-avatar"></div>
+						<table class="my-info">
+							<tr><th>ID</th><td>7775757</td></tr>
+							<tr><th>Имя</th><td>Степан</td></tr>
+							<tr><th>Фамилия</th><td>Иванов</td></tr>
+							<tr><th>Email</th><td>stepka@indahouse.by</td></tr>
+							<tr><th>Мобильный телефон</th><td>+375 555-75-75</td></tr>
+							<tr><th>Группа</th><td>Модераторы<span class="tooltip-form">?</span></td></tr>
+						</table>
+						<form method="post" action="">
+						</form>
+					</div>
+				</div>
+			</div>
+			<div class="section my-social clearfix">
+				<div class="h2">Профили в социальных сетях</div>
+                <ul class="list-soc-link">
+                    <li class="icon-vk"><a href="#">вконтакте</a></li>
+                    <li class="icon-fb"><a href="#">facebook</a></li>
+                    <li class="icon-od"><a href="#">одноклассники</a></li>
+                    <li class="icon-yandex"><a href="#">яндекс</a></li>
+                    <li class="icon-google"><a href="#">google+</a></li>
+                    <li class="icon-tw"><a href="#">twitter</a></li>
+                </ul>
+				<div class="hint">Вы можете связать несколько аккаунтов социальных сетей, выбирая их мышью.</div>
+			</div>
+		</div><!--end content-->
+    </div><!--end WRAPPER-->
+
+    <div class="wrap-footer">
+        <footer class="footer">
+            <a class="footer-logo" href="#">
+                <img src="images/footer/logo_footer.png" alt="Forsage">
+            </a>
+
+            <div class="box-right">
+                <div class="copyright-box">
+                    <span>2010-2014. Все права защищены</span>
+                    <span>Форсаж.BY. Автомобильный портал</span>
+                </div>
+
+                <div class="partners-footer">
+                    <a href="#">Пользовательское соглашение</a>
+                    <a href="#">Конфиденциальность информации</a>
+                    <a class="partners-foto" href="#">
+                        <img src="images/footer/openby.png" alt="open.by">
+                    </a>
+                </div>
+            </div>
+
+            <ul class="nav-footer">
+                <li><a href="#">О проекте</a></li>
+                <li><a href="#">Карта сайта</a></li>
+                <li><a href="#">Рекламодателям</a></li>
+                <li><a href="#">Контакты</a></li>
+            </ul>
+        </footer>
+    </div><!-- wrap-footer -->
+	
+    <!--POPUP WINDOWS-->
+    <div id="bg-popup">
+        <div id="wrap-popup">
+            <div class="wrap-reg-autoreg-form">
+                <ul id="list-reg-link_js" class="clearfix">
+                    <li class="active-page">
+                        <a id="link-reg" class="bt-toggle bt-advanced-search bt-reg" href="#">Регистрация</a>
+                    </li>
+                    <li>
+                        <a id="link-autoreg" class="bt-toggle bt-advanced-search bt-reg" href="#">Авторизация</a>
+                    </li>
+                </ul>
+
+                <form id="reg-form" action="#" method="post">
+                    <ul class="list-reg-inputs">
+                        <li>
+                            <label>
+                                <span class="icon-star">Логин</span>
+                                <input type="text">
+                            </label>
+                            <span class="tooltip-form">?</span>
+                        </li>
+
+                        <li>
+                            <label>
+                                <span class="icon-star">Пароль</span>
+                                <input type="text">
+                            </label>
+                            <span class="tooltip-form">?</span>
+                        </li>
+
+                        <li>
+                            <label>
+                                <span class="icon-star">E-mail</span>
+                                <input type="text">
+                            </label>
+                        </li>
+
+                        <li class="reg-captcha">
+                            <label>
+                                <span class="icon-star">Введите код</span>
+                                <img src="images/popup/captcha.jpg" alt="Капча">
+                                <input type="text">
+                            </label>
+                            <span class="tooltip-form">?</span>
+                        </li>
+                    </ul>
+
+                    <input class="bt-show-red no-margin" type="submit" value="Зарегестрироваться">
+                    <a class="recover-pass" href="#">Восстановить пароль</a>
+                </form><!--end REG FORM-->
+
+                <form id="autoreg-form" action="#" method="post">
+                    <ul class="list-reg-inputs">
+                        <li>
+                            <label>
+                                <span class="icon-star">Логин</span>
+                                <input type="text">
+                            </label>
+                            <span class="tooltip-form">?</span>
+                        </li>
+
+                        <li>
+                            <label>
+                                <span class="icon-star">Пароль</span>
+                                <input type="text">
+                            </label>
+                            <span class="tooltip-form">?</span>
+                        </li>
+                    </ul><!--end AUTOREG FORM-->
+
+                    <span class="name-list-soc-link">Войти через</span>
+                    <ul class="list-soc-link">
+                        <li class="icon-tw"><a href="#">twitter</a></li>
+                        <li class="icon-fb"><a href="#">facebook</a></li>
+                        <li class="icon-google"><a href="#">google+</a></li>
+                        <li class="icon-od"><a href="#">одноклассники</a></li>
+                        <li class="icon-yandex"><a href="#">яндекс</a></li>
+                        <li class="icon-vk"><a href="#">вконтакте</a></li>
+                    </ul>
+
+                    <input class="bt-show-red no-margin" type="submit" value="Войти">
+                </form><!--end AUTOREG FORM-->
+            </div><!--end WRAP REG AUTOREG FORM-->
+        </div><!--end WRAP POPUP-->
+    </div><!--end BG POPUP-->
+	
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="js/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="js/jquery.jcarousel.min.js"></script>
+    <script type="text/javascript" src="js/jcarousel.responsive.js"></script>
+    <script src="js/mainJq.js"></script>
+    <script src="js/jquery.ui-slider.js"></script>
+    <script src="js/jquery.main.js"></script>
+</body>
+</html>
